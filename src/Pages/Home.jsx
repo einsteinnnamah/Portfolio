@@ -21,7 +21,7 @@ const Home = () => {
               lasting experiences :)
             </p>
             <button className="px-5 font-Nunito mt-4 cursor-pointer rounded-[5px] py-2 text-white text-[18px] md:text-[20px] bg-[#1e1e1e]">
-              View Resume
+             <a target="_blank" href="https://drive.google.com/file/d/15AByVIB8jkfd0Fha8doCYIB-96y0sNjf/view?usp=share_link" > View Resume </a>
             </button>
           </div>
           <div>
@@ -35,8 +35,8 @@ const Home = () => {
               <img className="w-[90px] md:w-auto" src={Notion} />
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Notion</p>
-                <p className="underline text-[20px] text-[gray] lg:text-[24px] ">
-                  Click to view notion portfolio
+                <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
+                <a target="_blank" href="https://berry-echidna-297.notion.site/Halo-I-m-Einstein-Nnamah-d450b50aa6c94bc9bfca40e524f6b0d4"> Click to view notion portfolio</a> 
                 </p>
               </div>
             </div>
@@ -44,8 +44,8 @@ const Home = () => {
               <img className="w-[90px] md:w-auto" src={Behance} />
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Behance</p>
-                <p className="underline text-[20px] text-[gray] lg:text-[24px] ">
-                  Click to view behance portfolio
+                <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
+                 <a target="_blank" href="https://www.behance.net/einsteinnnamah"> Click to view behance portfolio </a>
                 </p>
               </div>
             </div>
