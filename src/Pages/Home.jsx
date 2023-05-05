@@ -2,7 +2,7 @@
 import Header from "../Components/Header";
 import Inprogress from "../Components/Inprogress";
 import pics from "../assets/pics.png";
-import OngoingFooter from "../Components/ongoingFooter";
+import OngoingFooter from "../Components/OngoingFooter";
 import Notion from "../assets/Notion.png";
 import Behance from "../assets/Behance.png";
 const Home = () => {
