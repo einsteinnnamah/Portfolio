@@ -45,7 +45,7 @@ const Home = () => {
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Behance</p>
                 <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                 <a target="_blank" href="https://www.behance.net/einsteinnnamah"> Click to view behance portfolio </a>
+                 <a target="_blank" href="mailto: einsteinnnamah@gmail.com"> Click to view behance portfolio </a>
                 </p>
               </div>
             </div>

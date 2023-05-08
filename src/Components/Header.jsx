@@ -20,7 +20,7 @@ const Header = () => {
               About me
             </p>
             <button className="bg-[#1e1e1e] text-white px-5 py-2 lg:text-[20px] rounded-[5px]">
-           < a target="_blank" href="https://einsteinnnamah@gmail.com" >  Contact me </a> 
+           < a target="_blank" href="mailto: einsteinnnamah@gmail.com" >  Contact me </a> 
             </button>
           </div>
           <span className="bg-[#1e1e1e] md:hidden text-white px-5 py-2 text-[16px] rounded-[5px]">
