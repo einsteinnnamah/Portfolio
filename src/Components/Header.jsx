@@ -2,18 +2,17 @@ import {HiOutlineMenu} from 'react-icons/hi'
 import { useState } from 'react';
 const Header = () => {
   const [showNav, setShowNav] = useState(false)
-  const onClick = () => setShowNav(true)
   const navItems = [
     {
-      id: 1,
+      link: "/",
       text: "Works"
     },
     {
-      id: 2,
+      link: "/",
       text: "Articles"
     },
     {
-      id: 3,
+      link: "/",
       text: "About me"
     }
   ]
@@ -29,7 +28,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-[32px]">
           {
             navItems.map((items) => 
-                <div key={items.id} className="lg:text-[20px] font-medium text-[#808080] hover:text-[#1e1e1e] cursor-pointer ease-out delay-100 duration-75">
+                <div key={items.index} className="lg:text-[20px] font-medium text-[#808080] hover:text-[#1e1e1e] cursor-pointer ease-out delay-100 duration-75">
               {items.text}
               </div>
             )
@@ -40,7 +39,7 @@ const Header = () => {
           </div>
           <span className=" md:hidden flex items-center gap-[10px]">
               <button className='bg-[#1e1e1e] md:hidden text-white px-5 py-2 text-[16px] rounded-[5px]'>Contact me</button>
-              <HiOutlineMenu onClick={onClick}
+              <HiOutlineMenu onClick={() =>setShowNav(!showNav)}
             className="flex md:hidden w-[32px] h-[32px]"
           />
             </span>
@@ -53,11 +52,11 @@ const Header = () => {
 {
   showNav ? 
 
-      <span className='md:hidden absolute w-screen h-screen bg-white py-20'>
-        <li className='flex items-center flex-col gap-y-10 px-20 justify-center'>
+      <span className='md:hidden absolute right-0 h-[310px] border-[#808080] flex items-center rounded-[5px] justify-center border-[1px] bg-white '>
+        <li className='flex items-center flex-col gap-y-10  px-20'>
         {
             navItems.map((items) => 
-                <div key={items.id} className="text-[32px] font-regular text-[#1e1e1e]">
+                <div key={items.index} className="text-[24px] font-regular text-[#1e1e1e]">
               {items.text}
               </div>
             )
