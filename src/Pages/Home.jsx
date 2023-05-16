@@ -5,6 +5,8 @@ import pics from "../assets/pics.png";
 import OngoingFooter from "../Components/OngoingFooter";
 import Notion from "../assets/Notion.png";
 import Behance from "../assets/Behance.png";
+import jamb from "../assets/jamb.png"
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -28,6 +30,22 @@ const Home = () => {
             <img className="md:w-[300px] mt-5 md:mt-0 xl:w-auto" src={pics} />
           </div>
         </div>
+
+        {/* Featured works */}
+        <div className="mt-[100px]">
+          <h2 className="font-Nunito font-semibold text-[38px]"><span className="text-[gray]">Featured</span> Works</h2>
+          <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
+              <img className="w-[90px] md:w-auto" src={jamb} />
+              <div className="mt-[28px] font-Nunito ">
+                <p className="lg:text-[40px] md:text-[32px] text-[28px]">Jamb</p>
+                <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
+                <Link to="/JambCasestudy"> Click to view casestudy</Link> 
+                </p>
+              </div>
+            </div>
+        </div>
+
+        {/* Previous portfolio */}
         <div className="mt-[120px] flex items-center flex-col mb-10">
           <h2 className="text-[32px] mb-[20px]">Previous Portfolios</h2>
           <div className="flex flex-col items-center lg:flex-row gap-10">
@@ -36,7 +54,7 @@ const Home = () => {
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Notion</p>
                 <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                <a target="_blank" href="https://berry-echidna-297.notion.site/Halo-I-m-Einstein-Nnamah-d450b50aa6c94bc9bfca40e524f6b0d4"> Click to view notion portfolio</a> 
+                <a> Click to view notion portfolio</a> 
                 </p>
               </div>
             </div>
