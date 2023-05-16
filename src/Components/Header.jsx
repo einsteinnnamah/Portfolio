@@ -1,5 +1,6 @@
 import {HiOutlineMenu} from 'react-icons/hi'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const Header = () => {
   const [showNav, setShowNav] = useState(false)
   const navItems = [
@@ -22,13 +23,13 @@ const Header = () => {
       <div className="xl:w-[1440px] px-[24px] xl:px-[120px] lg:px-[64px] md:px-[32px] m-auto ">
         <div className="flex justify-between font-Nunito h-[108px] items-center">
           <h3 className="text-[32px] font-semibold">
-            <span className="flex text-[24px] md:hidden">Einstein</span>
-            <span className="hidden md:flex">einsteinnnamah</span>
+            <Link to="/" className="flex text-[24px] md:hidden">Einstein</Link>
+            <Link to="/" className="hidden md:flex">einsteinnnamah</Link>
           </h3>
           <div className="hidden md:flex items-center gap-[32px]">
           {
-            navItems.map((items) => 
-                <div key={items.index} className="lg:text-[20px] font-medium text-[#808080] hover:text-[#1e1e1e] cursor-pointer ease-out delay-100 duration-75">
+            navItems.map((items, index) => 
+                <div key={index} className="lg:text-[20px] font-medium text-[#808080] hover:text-[#1e1e1e] cursor-pointer ease-out delay-100 duration-75">
               {items.text}
               </div>
             )
@@ -43,9 +44,6 @@ const Header = () => {
             className="flex md:hidden w-[32px] h-[32px]"
           />
             </span>
-
-          
-            
         </div>
       </div>
       {/*Mobile */}
@@ -55,8 +53,8 @@ const Header = () => {
       <span className='md:hidden absolute right-0 h-[310px] border-[#808080] flex items-center rounded-[5px] justify-center border-[1px] bg-white '>
         <li className='flex items-center flex-col gap-y-10  px-20'>
         {
-            navItems.map((items) => 
-                <div key={items.index} className="text-[24px] font-regular text-[#1e1e1e]">
+            navItems.map((items, index) => 
+                <div key={index} className="text-[24px] font-regular text-[#1e1e1e]">
               {items.text}
               </div>
             )
