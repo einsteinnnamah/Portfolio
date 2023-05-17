@@ -39,6 +39,11 @@ const Jamb = () => {
           <p className='text-[20px] mt-[20px] text-[#504A4A]'> I observed some issues below: </p>
           <img className='mt-[20px]' src={issues} />
         </div>
+        {/* User research */}
+        <div className='font-Nunito mt-[60px]'>
+          <h2 className='text-[32px] font-Gambetta'>User Research</h2>
+          <p>Pushing update later today</p>
+        </div>
       </div>
     </div>
     </>
