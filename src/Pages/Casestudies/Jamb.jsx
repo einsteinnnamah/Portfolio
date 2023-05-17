@@ -2,13 +2,14 @@ import React from 'react'
 import Header from '../../Components/Header'
 import { Link } from 'react-router-dom'
 import src from '../../assets/link.svg'
+import issues from '../../assets/issues.png'
 const Jamb = () => {
   return (
     <>
     <Header />
     <div  className="xl:w-[1440px] px-[24px]  xl:px-[120px] lg:px-[64px] md:px-[32px] m-auto">
       <div className='mt-[64px]'>
-        <div className='text-[gray] font-Nunito text-[24px]'><Link to="/" className='text-[#1e1e1e]'>Home</Link>/ <Link to="/" className='text-[#1e1e1e]'>Works</Link> / Jamb</div>
+        <div className='text-[gray] font-Nunito text-[18px] md:text-[24px]'><Link to="/" className='text-[#1e1e1e]'>Home</Link>/ <Link to="/" className='text-[#1e1e1e]'>Works</Link> / Jamb</div>
         {/* Header */}
         <div className='md:text-[48px] text-[34px] text-center mt-[60px] font-Gambetta font-semibold'>
         JAMB (Joint Admissions and Matriculation Board) homepage redesign
@@ -36,6 +37,7 @@ const Jamb = () => {
           <p className='text-[20px] text-[#504A4A]'>To start the project, I looked closely at the JAMB website, like a detective investigating a mystery. I wanted to understand how the website is built and how it works. Just like a house has rooms and furniture, a website has different parts and features. </p>
           <p className='text-[20px] mt-[20px] text-[#504A4A]'>I carefully studied the JAMB website, examining its layout, design elements, and interactive features. This allowed me to understand how things are organized on the screen, such as buttons and forms, and how people can find information and complete important tasks like registration and result checking. My goal was to ensure the website is user-friendly and easy to navigate, making it simple for people to access the information they need with ease.</p>
           <p className='text-[20px] mt-[20px] text-[#504A4A]'> I observed some issues below: </p>
+          <img className='mt-[20px]' src={issues} />
         </div>
       </div>
     </div>
