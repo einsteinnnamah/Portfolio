@@ -13,7 +13,7 @@ const Header = () => {
       text: "Articles"
     },
     {
-      link: "/",
+      link: "/aboutme",
       text: "About me"
     }
   ]
@@ -29,9 +29,9 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-[32px]">
           {
             navItems.map((items, index) => 
-                <div key={index} className="lg:text-[20px] font-medium text-[#808080] hover:text-[#1e1e1e] cursor-pointer ease-out delay-100 duration-75">
+                <Link to={items.link} key={index} className="lg:text-[20px] font-medium text-[#808080] hover:text-[#1e1e1e] cursor-pointer ease-out delay-100 duration-75">
               {items.text}
-              </div>
+              </Link>
             )
           }
             <button className="bg-[#1e1e1e] text-white px-5 py-2 lg:text-[20px] rounded-[5px]">
@@ -54,9 +54,9 @@ const Header = () => {
         <li className='flex items-center flex-col gap-y-10  px-20'>
         {
             navItems.map((items, index) => 
-                <div key={index} className="text-[24px] font-regular text-[#1e1e1e]">
+                <Link to={items.link} key={index} className="text-[24px] font-regular text-[#1e1e1e]">
               {items.text}
-              </div>
+              </Link>
             )
           }
         </li>
