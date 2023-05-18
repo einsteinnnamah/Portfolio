@@ -3,6 +3,7 @@ import Header from '../../Components/Header'
 import { Link } from 'react-router-dom'
 import src from '../../assets/link.svg'
 import issues from '../../assets/issues.png'
+import issues2 from '../../assets/issues2.png'
 const Jamb = () => {
   return (
     <>
@@ -42,7 +43,14 @@ const Jamb = () => {
         {/* User research */}
         <div className='font-Nunito mt-[60px]'>
           <h2 className='text-[32px] font-Gambetta'>User Research</h2>
-          <p>Pushing update later today</p>
+          <p className='text-[20px] mt-[20px] text-[#504A4A]'>In order to gather insights from users, I conducted physical interviews with three participants. During these interviews, several key findings emerged, providing valuable input for this case study.</p>
+          <img className='mt-[20px]' src={issues2} />
+          <p className='text-[20px] mt-[20px] text-[#504A4A]'>These findings informed my design decisions for the JAMB homepage redesign. Users desire easy access to information, a clear navigation system, and consistent text styles. Incorporating these insights, I aim to create a user-friendly design that improves information accessibility and enhances the overall user experience.</p>
+        </div>
+        {/* The design */}
+        <div className='font-Nunito mt-[60px]'>
+          <h2 className='text-[32px] font-Gambetta'>The design</h2>
+          <p>Update coming in by tomorrow</p>
         </div>
       </div>
     </div>
