@@ -52,7 +52,7 @@ const Jamb = () => {
         {/* The design */}
         <div className='font-Nunito mt-[60px]'>
           <h2 className='text-[32px] font-Gambetta'>The design</h2>
-          <p>I used a special design system called Naija Design System. I kept the important parts of the design similar to what they already had but made a few changes. I added some new sections and wrote words to go along with the design. This way, the JAMB homepage will look nice and fit well with the other designs.</p>
+          <p className='text-[20px] mt-[20px] text-[#504A4A]'>I used a special design system called Naija Design System. I kept the important parts of the design similar to what they already had but made a few changes. I added some new sections and wrote words to go along with the design. This way, the JAMB homepage will look nice and fit well with the other designs.</p>
         </div>
       </div>
     </div>
