@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import src from '../../assets/link.svg'
 import issues from '../../assets/issues.png'
 import issues2 from '../../assets/issues2.png'
+import issues3 from '../../assets/issues3.png'
 const Jamb = () => {
   return (
     <>
@@ -45,12 +46,13 @@ const Jamb = () => {
           <h2 className='text-[32px] font-Gambetta'>User Research</h2>
           <p className='text-[20px] mt-[20px] text-[#504A4A]'>In order to gather insights from users, I conducted physical interviews with three participants. During these interviews, several key findings emerged, providing valuable input for this case study.</p>
           <img className='mt-[20px]' src={issues2} />
+          <img className='mt-[10px]' src={issues3} />
           <p className='text-[20px] mt-[20px] text-[#504A4A]'>These findings informed my design decisions for the JAMB homepage redesign. Users desire easy access to information, a clear navigation system, and consistent text styles. Incorporating these insights, I aim to create a user-friendly design that improves information accessibility and enhances the overall user experience.</p>
         </div>
         {/* The design */}
         <div className='font-Nunito mt-[60px]'>
           <h2 className='text-[32px] font-Gambetta'>The design</h2>
-          <p>Update coming in by tomorrow</p>
+          <p className='text-[20px] mt-[20px] text-[#504A4A]'>I used a special design system called Naija Design System. I kept the important parts of the design similar to what they already had but made a few changes. I added some new sections and wrote words to go along with the design. This way, the JAMB homepage will look nice and fit well with the other designs.</p>
         </div>
       </div>
     </div>
