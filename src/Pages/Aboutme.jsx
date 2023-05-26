@@ -1,9 +1,11 @@
 import React from "react";
 import Header from "../Components/Header";
 import pics2 from "../assets/pics2.png";
+import Inprogress from "../Components/Inprogress";
 const Aboutme = () => {
   return (
     <>
+    <Inprogress />
       <Header />
       <div className="xl:w-[1440px] px-[24px]  xl:px-[120px] lg:px-[64px] md:px-[32px] m-auto">
         <div className="flex mt-[65px] flex-col items-center justify-center">
