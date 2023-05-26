@@ -4,6 +4,7 @@ import Aboutme from './Pages/Aboutme'
 import Errorpage from './Pages/Errorpage'
 import Jamb from './Pages/Casestudies/Jamb'
 import Arteshots from './Pages/Casestudies/Arteshots'
+import Articles from './Pages/Articles'
 function App() {
   return (
       <Router>
@@ -11,8 +12,9 @@ function App() {
           <Route path="*" element={<Errorpage />}></Route>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path='/Aboutme' element={<Aboutme />}></Route>
-          <Route exact path='/Jamb' element={<Jamb />}></Route>
-          <Route exact path='/Arteshots' element={<Arteshots />}></Route>
+          <Route exact path='/Works/Jamb' element={<Jamb />}></Route>
+          <Route exact path='/Works/Arteshots' element={<Arteshots />}></Route>
+          <Route exact path='Articles' element={<Articles />}></Route>
         </Routes>
       </Router>
   )

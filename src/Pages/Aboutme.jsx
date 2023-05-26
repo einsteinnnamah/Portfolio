@@ -14,7 +14,7 @@ const Aboutme = () => {
           </h3>
           <p className="font-Nunito mt-[16px] text-[24px] text-center lg:w-[600px]">
             I am Einstein — a digital product designer based in Lagos, Nigeria,
-            with 2 years of experience. My primary focus is on utilizing design
+            with over 2 years of experience. My primary focus is on utilizing design
             to create positive impact.
           </p>
           <div className="flex flex-col gap-[20px] mt-[32px] md:flex-row">
