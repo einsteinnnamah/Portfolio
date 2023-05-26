@@ -41,7 +41,7 @@ const Home = () => {
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Jamb</p>
                 <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                <Link to="/Jamb"> Click to view casestudy</Link> 
+                <Link to="/Works/Jamb"> Click to view casestudy</Link> 
                 </p>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Home = () => {
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Arteshots</p>
                 <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                <Link to="/Arteshots"> Click to view casestudy</Link> 
+                <Link to="/Works/Arteshots"> Click to view casestudy</Link> 
                 </p>
               </div>
             </div>
