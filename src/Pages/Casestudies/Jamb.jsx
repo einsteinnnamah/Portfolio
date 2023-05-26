@@ -33,7 +33,7 @@ const Jamb = () => {
           </div>
           <div>
           <h3 className='text-[24px] mt-[24px] font-Gambetta md:text-[32px]'>Timeline</h3>
-          <p className='text-[#504A4A] text-[20px]'>Undecided</p>
+          <p className='text-[#504A4A] text-[20px]'>1 week</p>
           </div>
         </div>
         {/* OVerview */}
