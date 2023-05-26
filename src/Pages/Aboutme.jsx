@@ -1,9 +1,11 @@
 import React from "react";
 import Header from "../Components/Header";
 import pics2 from "../assets/pics2.png";
+import Inprogress from "../Components/Inprogress";
 const Aboutme = () => {
   return (
     <>
+    <Inprogress />
       <Header />
       <div className="xl:w-[1440px] px-[24px]  xl:px-[120px] lg:px-[64px] md:px-[32px] m-auto">
         <div className="flex mt-[65px] flex-col items-center justify-center">
@@ -12,7 +14,7 @@ const Aboutme = () => {
           </h3>
           <p className="font-Nunito mt-[16px] text-[24px] text-center lg:w-[600px]">
             I am Einstein — a digital product designer based in Lagos, Nigeria,
-            with 2 years of experience. My primary focus is on utilizing design
+            with over 2 years of experience. My primary focus is on utilizing design
             to create positive impact.
           </p>
           <div className="flex flex-col gap-[20px] mt-[32px] md:flex-row">

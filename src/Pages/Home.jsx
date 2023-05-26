@@ -6,6 +6,7 @@ import OngoingFooter from "../Components/OngoingFooter";
 import Notion from "../assets/Notion.png";
 import Behance from "../assets/Behance.png";
 import jamb from "../assets/jamb.png"
+import Arteshots from '../assets/Arteshots.png'
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
@@ -34,16 +35,30 @@ const Home = () => {
         {/* Featured works */}
         <div className="mt-[100px]">
           <h2 className="font-Nunito font-semibold text-[38px]"><span className="text-[gray]">Featured</span> Works</h2>
+          <div className="md:flex items-center  gap-10">
           <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <img className="w-[90px] md:w-auto" src={jamb} />
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Jamb</p>
                 <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                <Link to="/JambCasestudy"> Click to view casestudy</Link> 
+                <Link to="/Works/Jamb"> Click to view casestudy</Link> 
                 </p>
               </div>
             </div>
+            <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
+              <img className="w-[90px] md:w-auto" src={Arteshots} />
+              <div className="mt-[28px] font-Nunito ">
+                <p className="lg:text-[40px] md:text-[32px] text-[28px]">Arteshots</p>
+                <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
+                <Link to="/Works/Arteshots"> Click to view casestudy</Link> 
+                </p>
+              </div>
+            </div>
+          </div>
+        
+            
         </div>
+        
 
         {/* Previous portfolio */}
         <div className="mt-[120px] flex items-center flex-col mb-10">

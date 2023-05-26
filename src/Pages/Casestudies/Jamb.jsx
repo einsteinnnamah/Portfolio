@@ -5,9 +5,17 @@ import src from '../../assets/link.svg'
 import issues from '../../assets/issues.png'
 import issues2 from '../../assets/issues2.png'
 import issues3 from '../../assets/issues3.png'
+import sketch from '../../assets/sketch.png'
+import Home from '../../assets/Home.png'
+import Register from '../../assets/Register.png'
+import Quicklinks from '../../assets/Quicklinks.png'
+import News from '../../assets/News.png'
+import Footer from '../../assets/Footer.png'
+import Inprogress from '../../Components/Inprogress'
 const Jamb = () => {
   return (
     <>
+    <Inprogress />
     <Header />
     <div  className="xl:w-[1440px] px-[24px]  xl:px-[120px] lg:px-[64px] md:px-[32px] m-auto">
       <div className='mt-[64px]'>
@@ -25,7 +33,7 @@ const Jamb = () => {
           </div>
           <div>
           <h3 className='text-[24px] mt-[24px] font-Gambetta md:text-[32px]'>Timeline</h3>
-          <p className='text-[#504A4A] text-[20px]'>Undecided</p>
+          <p className='text-[#504A4A] text-[20px]'>1 week</p>
           </div>
         </div>
         {/* OVerview */}
@@ -53,6 +61,42 @@ const Jamb = () => {
         <div className='font-Nunito mt-[60px]'>
           <h2 className='text-[32px] font-Gambetta'>The design</h2>
           <p className='text-[20px] mt-[20px] text-[#504A4A]'>I used a special design system called Naija Design System. I kept the important parts of the design similar to what they already had but made a few changes. I added some new sections and wrote words to go along with the design. This way, the JAMB homepage will look nice and fit well with the other designs.</p>
+        {/* Sketches */}
+        <div className='font-Nunito mt-[30px]'>
+          <h2 className='text-[22px] font-Gambetta'>Sketches</h2>
+          <p className='text-[20px] mt-[5px] text-[#504A4A]'>From the insights i got from the user research i decided to come up with some sketches </p>
+          <img className='mt-[10px' src={sketch} />
+        </div>
+        {/* Main design */}
+        <div>
+          <h2 className='text-[22px] font-Gambetta'>User Interface</h2>
+          <div>
+            <h2>Home</h2>
+            <p>This screen allows the user at a glimpse and enable them to navigate through the whole app</p>
+            <img src={Home} />
+          </div>
+          <div>
+            <h2>Register</h2>
+            <p>This screen helps the user know who the register of jamb is and jamb's mandate "sometimes they as this question in jamb"
+            </p>
+            <img src={Register} />
+          </div>
+          <div>
+            <h2>Quick links</h2>
+            <p>This screen helps the user navigate through the other parts of the app without having to scroll up</p>
+            <img src={Quicklinks} />
+          </div>
+          <div>
+            <h2>News</h2>
+            <p>This screen helps the user to view latest jamb news and what is happing around the examination</p>
+            <img src={News} />
+          </div>
+          <div>
+            <h2>Footer</h2>
+            <p>This screen has the contact details and little info for the users</p>
+            <img src={Footer} />
+          </div>
+        </div>
         </div>
       </div>
     </div>
