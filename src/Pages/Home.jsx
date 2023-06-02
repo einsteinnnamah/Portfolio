@@ -46,6 +46,14 @@ const Home = () => {
               </div>
             </div>
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
+              <div className="mt-[28px] font-Nunito ">
+                <p className="lg:text-[40px] md:text-[32px] text-[28px]">Edtech Style Guide</p>
+                <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
+                <Link to="/Works/Edtech"> Click to view casestudy</Link> 
+                </p>
+              </div>
+            </div>
+            <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <img className="w-[90px] md:w-auto" src={Arteshots} />
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">Arteshots</p>
