@@ -4,7 +4,11 @@ import Inprogress from "../../Components/Inprogress";
 import { Link } from "react-router-dom";
 import color1 from "../../assets/Edtech/color1.png";
 import color2 from "../../assets/Edtech/color2.png";
-import color1mobile from "../../assets/Edtech/iPhone 13/Frame 44.png";
+import banner1 from "../../assets/Edtech/banner1.png"
+import banner2 from "../../assets/Edtech/banner2.png"
+import iconer from "../../assets/Edtech/iconer.png"
+import inputs from "../../assets/Edtech/inputs.png"
+import typo from "../../assets/Edtech/typo.gif"
 const Edtech = () => {
   return (
     <>
@@ -74,7 +78,7 @@ const Edtech = () => {
               <p className="text-[20px] md:w-[906px] text-[#504A4A]">
                 <span className="font-Gambetta text-[#1e1e1e] font-semibold">
                   Yellow,
-                </span>{" "}
+                </span>
                 on the other hand, is a color associated with joy, energy, and
                 happiness. By incorporating various shades of yellow, i aim to
                 infuse the interface with a vibrant and cheerful atmosphere.
@@ -97,13 +101,54 @@ const Edtech = () => {
               Support{" "}
             </p>
             <img src={color2} />
-            {/* OVerview */}
+            </div>
+            {/* Typography */}
           <div className="mt-[60px] font-Nunito">
             <h2 className="text-[32px] font-Gambetta">Typography</h2>
             <p className="text-[20px] text-[#504A4A]">
             The typography choices i made for the this style guide were focusing on creating a child-friendly and easily readable interface for nursery kids learning the alphabet that aims to enhance legibility, simplicity, and overall engagement with the educational content.
             </p>
+            <div className="mt-[20px] flex justify-center"><img src={typo} /></div>
+            <p className="text-[20px] mt-[15px] text-[#504A4A]">
+            Through careful consideration of colors and typography, I successfully developed several iterations that effectively utilize the chosen color palette and child-friendly fonts
+            </p>
+            <div className="flex flex-col md:flex-row gap-10 md:gap-20 mt-10 justify-center">
+                <img src={banner1} />
+                <img src={banner2} />
+            </div>
           </div>
+          {/* Iconography */}
+          <div className="mt-[60px] font-Nunito">
+            <h2 className="text-[32px] font-Gambetta">Iconography</h2>
+            <p className="text-[20px] text-[#504A4A]">
+            Iconography plays a crucial role in visually reinforcing concepts and aiding comprehension. The selected icons aim to be relatable, intuitive, and age-appropriate, providing meaningful visual cues for young learners.
+            </p>
+            <div className="flex justify-center">
+                <img  src={iconer} />
+            </div>
+           
+          </div>
+          {/* Inputfields */}
+          <div className="mt-[60px] font-Nunito">
+            <h2 className="text-[32px] font-Gambetta">Inputfields</h2>
+         
+            <div className="flex justify-center">
+                <img  src={inputs} />
+            </div>
+          </div>
+          {/* Resources used */}
+          <div className="mt-[60px] font-Nunito">
+            <h2 className="text-[32px] font-Gambetta">Resources used</h2>
+            <p className="text-[20px] text-[#504A4A]">
+            Fourthcanvas -Pennee: <a target='_blank' href='https://fourthcanvas.co/works/pennee'>Link</a>
+            </p>
+            <p className="text-[20px] text-[#504A4A]">
+            Youtube video: <a target='_blank' href='https://www.youtube.com/watch?v=zXXkJvIkPWc'>Link</a>
+            </p>
+            <p className="text-[20px] text-[#504A4A]">
+            Cynthia Ugwudike’s design: <a target='_blank' href='https://www.behance.net/gallery/135766409/Task-App-For-Kids-A-UX-Case-Study'>Link</a>
+            </p>
+         
           </div>
         </div>
       </div>
