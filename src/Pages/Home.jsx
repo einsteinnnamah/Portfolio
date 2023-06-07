@@ -8,6 +8,7 @@ import Behance from "../assets/Behance.png";
 import jamb from "../assets/jamb.png"
 import Arteshots from '../assets/Arteshots.png'
 import { Link } from "react-router-dom";
+import googlemeet from '../assets/Googlemeet/googlemeet.png'
 const Home = () => {
   return (
     <>
@@ -54,11 +55,11 @@ const Home = () => {
               </div>
             </div>
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
-              <img className="w-[90px] md:w-auto" src={Arteshots} />
+              <img className="w-[90px] md:w-auto" src={googlemeet} />
               <div className="mt-[28px] font-Nunito ">
-                <p className="lg:text-[40px] md:text-[32px] text-[28px]">Arteshots</p>
+                <p className="lg:text-[40px] md:text-[32px] text-[28px]">Googlemeet</p>
                 <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                <Link to="/Works/Arteshots"> Click to view casestudy</Link> 
+                <Link to="/Works/Googlemeet"> Click to view casestudy</Link> 
                 </p>
               </div>
             </div>
