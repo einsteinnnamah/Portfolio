@@ -20,7 +20,7 @@ const Home = () => {
       <div className="xl:w-[1440px] px-[24px]  xl:px-[120px] lg:px-[64px] md:px-[32px] m-auto">
         <div className="mt-[90px]  md:flex md:justify-between">
           <div>
-            <h1 className=" font-Gambetta font-semibold text-[50px] lg:text-[54px] xl:text-[96px]">
+            <h1 className=" font-Gambetta leading-[108%] font-semibold text-[50px] lg:text-[54px] xl:text-[96px]">
               Halo, <br /> I'm Einstein
             </h1>
             <p className="font-Nunito text-[20px] xl:text-[32px] md:w-[390px] xl:w-[496px] font-medium">
@@ -45,8 +45,8 @@ const Home = () => {
         {/* Featured works */}
 
         <div className="mt-[100px]">
-          <h2 className="font-Nunito font-semibold text-[38px]">
-            <span className="text-[gray]">Featured</span> Works
+          <h2 className="font-Nunito text-[24px] font-semibold md:text-[38px]">
+            <span className="  text-[gray]">Featured</span> Works
           </h2>
           {/* MObile UI kit */}
           <div>
@@ -60,7 +60,7 @@ const Home = () => {
                 href="https://www.figma.com/community/file/1132737808668818244"
                 className="flex items-center justify-between"
               >
-                <p className="w-auto text-[14px] md:w-[800px] text-[gray] lg:text-[24px] md:text-[20px]">
+                <p className="w-auto text-[14px]  text-[gray] lg:text-[24px] md:text-[20px]">
                   An open-source Mobile UI kit that helps designers enhance
                   consistency, thereby helping users make use of these designed
                   apps easily.
@@ -70,30 +70,52 @@ const Home = () => {
             </div>
           </div>
           {/* Edtech UI kit */}
-          <div>
-            <img src={abc} />
+          <div className="flex">
+       <div>
+       <img className="md:w-[400px] lg-w-auto" src={abc} />
             <div>
-              <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[24px] lg:text-[38px] ">
+              <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[22px] lg:text-[38px] ">
               Edtech style guide
               </h2>
               <a
                 target="_blank"
                 href="https://www.figma.com/community/file/1132737808668818244"
-                className="flex items-center justify-between w-[573px]"
+                className="flex items-center md:w-[573px]"
               >
-                <p className="w-auto text-[14px] text-[gray] lg:text-[20px] md:text-[20px]">
+                <p className=" text-[14px] md:w-[400px] lg:w-auto text-[gray] lg:text-[20px] md:text-[18px]">
                   An open-source Mobile UI kit that helps designers enhance
                   consistency, thereby helping users make use of these designed
-                  apps easily./
+                  apps easily.
                 </p>
-                <img className="hidden md:flex" src={arrow} />
+                <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
               </a>
             </div>
+       </div>
+       <div>
+       <img className="md:w-[400px] lg-w-auto" src={abc} />
+            <div>
+              <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[22px] lg:text-[38px] ">
+              Edtech style guide
+              </h2>
+              <a
+                target="_blank"
+                href="https://www.figma.com/community/file/1132737808668818244"
+                className="flex items-center  md:w-[573px]"
+              >
+                <p className=" text-[14px] md:w-[400px] lg:w-auto text-[gray] lg:text-[20px] md:text-[18px]">
+                  An open-source Mobile UI kit that helps designers enhance
+                  consistency, thereby helping users make use of these designed
+                  apps easily.
+                </p>
+                <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
+              </a>
+            </div>
+       </div>
           </div>
 
           <div className="md:flex items-center  gap-10">
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
-              <img className="w-[90px] md:w-auto" src={jamb} />
+              <img  src={jamb} />
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">
                   Jamb
