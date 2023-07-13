@@ -9,7 +9,7 @@ import jamb from "../assets/jamb.png";
 import { Link } from "react-router-dom";
 import googlemeet from "../assets/Googlemeet/googlemeet.png";
 import mobile from "../assets/mobile.png";
-import abc from "../assets/abc.png"
+import abc from "../assets/abc.png";
 import arrow from "../assets/arrow.png";
 
 const Home = () => {
@@ -55,67 +55,94 @@ const Home = () => {
               <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[24px] lg:text-[38px] ">
                 Mobile UI kit
               </h2>
+
+              <p className="w-auto text-[14px] mb-2 text-[gray] lg:text-[24px] md:text-[20px]">
+                An open-source Mobile UI kit that helps designers enhance
+                consistency, thereby helping users make use of these designed
+                apps easily.
+              </p>
               <a
                 target="_blank"
                 href="https://www.figma.com/community/file/1132737808668818244"
-                className="flex items-center justify-between"
+                className=" "
               >
-                <p className="w-auto text-[14px]  text-[gray] lg:text-[24px] md:text-[20px]">
-                  An open-source Mobile UI kit that helps designers enhance
-                  consistency, thereby helping users make use of these designed
-                  apps easily.
-                </p>
-                <img className="hidden md:flex" src={arrow} />
+                <button className="bg-[#1e1e1e] text-white text-[18px] w-[120px] md:w-[187px] h-[55px] rounded-[5px] ">
+                  {" "}
+                  View kit
+                </button>
               </a>
             </div>
           </div>
           {/* Edtech UI kit */}
-          <div className="flex">
-       <div>
-       <img className="md:w-[400px] lg-w-auto" src={abc} />
+
+          <div className="flex mt-[80px] md:flex-row gap-[30px] items-center flex-col">
             <div>
-              <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[22px] lg:text-[38px] ">
-              Edtech style guide
-              </h2>
-              <a
-                target="_blank"
-                href="https://www.figma.com/community/file/1132737808668818244"
-                className="flex items-center md:w-[573px]"
-              >
-                <p className=" text-[14px] md:w-[400px] lg:w-auto text-[gray] lg:text-[20px] md:text-[18px]">
-                  An open-source Mobile UI kit that helps designers enhance
-                  consistency, thereby helping users make use of these designed
-                  apps easily.
-                </p>
-                <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
-              </a>
+              <img src={abc} alt="Edtech style guide" />
             </div>
-       </div>
-       <div>
-       <img className="md:w-[400px] lg-w-auto" src={abc} />
             <div>
-              <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[22px] lg:text-[38px] ">
-              Edtech style guide
-              </h2>
-              <a
-                target="_blank"
-                href="https://www.figma.com/community/file/1132737808668818244"
-                className="flex items-center  md:w-[573px]"
+              <h1 className="text-[30px] font-semibold font-Gambetta">
+                Edtech style guide
+              </h1>
+              <p className="text-[20px] lg:w-[420px] font-Nunito text-[gray]">
+                This design guide is all about making learning the alphabet
+                super fun for little kids{" "}
+              </p>
+              <Link
+               to="/Works/Edtech"
               >
-                <p className=" text-[14px] md:w-[400px] lg:w-auto text-[gray] lg:text-[20px] md:text-[18px]">
-                  An open-source Mobile UI kit that helps designers enhance
-                  consistency, thereby helping users make use of these designed
-                  apps easily.
-                </p>
-                <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
-              </a>
+                <button className="bg-[#1e1e1e] text-white text-[18px] w-[120px] md:w-[187px] h-[55px] rounded-[5px] ">
+                  {" "}
+                  Read casestudy
+                </button>
+              </Link>
             </div>
-       </div>
           </div>
+          {/* <div className="flex flex-col md:flex-row gap-[40px] md:gap-[10px] lg:gap-[100px]">
+        <div>
+        <img className="md:w-[350px] lg-w-[200%]" src={abc} />
+              <div>
+                <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[28px] lg:text-[38px] ">
+                Edtech style guide
+                </h2>
+                <Link
+                  target="_blank"
+                  href="https://www.figma.com/community/file/1132737808668818244"
+                  className="flex items-center lg:w-[573px]"
+                >
+                  <p className=" text-[14px] xl:w-[300px] text-[gray] lg:text-[20px] md:text-[16px]">
+                    An open-source Mobile UI kit that helps designers enhance
+                    consistency, thereby helping users make use of these designed
+                    apps easily.
+                  </p>
+                  <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
+                </Link>
+              </div>
+        </div>
+        <div>
+        <img className="md:w-[350px] lg-w-auto" src={abc} />
+              <div>
+                <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[28px] lg:text-[38px] ">
+              Google meet
+                </h2>
+                <Link
+                  target="_blank"
+                  href="https://www.figma.com/community/file/1132737808668818244"
+                  className="flex items-center lg:w-[573px]"
+                >
+                  <p className=" text-[14px]  lg:w-auto text-[gray] lg:text-[20px] md:text-[16px]">
+                    An open-source Mobile UI kit that helps designers enhance
+                    consistency, thereby helping users make use of these designed
+                    apps easily.
+                  </p>
+                  <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
+                </Link>
+              </div>
+        </div>
+            </div> */}
 
           <div className="md:flex items-center  gap-10">
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
-              <img  src={jamb} />
+              <img src={jamb} />
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">
                   Jamb
