@@ -73,8 +73,9 @@ const Home = () => {
               </a>
             </div>
           </div>
-          {/* Edtech UI kit */}
-
+  {/* Main works items here */}
+          <div className="flex flex-col items-center justify-center">
+        {/* Edtech UI kit */}
           <div className="flex mt-[80px] md:flex-row gap-[30px] items-center flex-col">
             <div>
               <img src={abc} alt="Edtech style guide" />
@@ -83,20 +84,21 @@ const Home = () => {
               <h1 className="text-[30px] font-semibold font-Gambetta">
                 Edtech style guide
               </h1>
-              <p className="text-[20px] lg:w-[420px] font-Nunito text-[gray]">
+              <p className=" text-[16px] md:text-[18px] lg:text-[20px] lg:w-[420px] font-Nunito text-[gray]">
                 This design guide is all about making learning the alphabet
                 super fun for little kids{" "}
               </p>
               <Link
                to="/Works/Edtech"
               >
-                <button className="bg-[#1e1e1e] text-white text-[18px] w-[120px] md:w-[187px] h-[55px] rounded-[5px] ">
-                  {" "}
+                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[40px] text-white text-[18px] w-auto px-[14px] md:w-[187px] h-[55px] rounded-[5px] ">
                   Read casestudy
                 </button>
               </Link>
             </div>
           </div>
+          </div>
+
           {/* <div className="flex flex-col md:flex-row gap-[40px] md:gap-[10px] lg:gap-[100px]">
         <div>
         <img className="md:w-[350px] lg-w-[200%]" src={abc} />
@@ -152,7 +154,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
+            {/* <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">
                   Edtech Style Guide
@@ -161,7 +163,7 @@ const Home = () => {
                   <Link to="/Works/Edtech"> Click to view casestudy</Link>
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <img className="w-[90px] md:w-auto" src={googlemeet} />
               <div className="mt-[28px] font-Nunito ">
