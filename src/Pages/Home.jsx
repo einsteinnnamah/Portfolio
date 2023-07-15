@@ -13,6 +13,13 @@ import abc from "../assets/abc.png";
 import arrow from "../assets/arrow.png";
 
 const Home = () => {
+  const workLists = [
+    {
+      button: "/Works/Edtech",
+      title: "Edtech style guide",
+      paragraph: ""
+    },
+  ]
   return (
     <>
       <Inprogress />
