@@ -9,16 +9,17 @@ import jamb from "../assets/jamb.png";
 import { Link } from "react-router-dom";
 import googlemeet from "../assets/Googlemeet/googlemeet.png";
 import mobile from "../assets/mobile.png";
-import arrow from "../assets/arrow.png"
-const workItems = [
-  {
-    link: "/",
-    head: "Edtech Style Guide",
-    para: "This design guide is all about making learning the alphabet super fun for little kids ",
-    img: {},
-  },
-];
+import abc from "../assets/abc.png";
+import arrow from "../assets/arrow.png";
+
 const Home = () => {
+  const workLists = [
+    {
+      button: "/Works/Edtech",
+      title: "Edtech style guide",
+      paragraph: ""
+    },
+  ]
   return (
     <>
       <Inprogress />
@@ -26,7 +27,7 @@ const Home = () => {
       <div className="xl:w-[1440px] px-[24px]  xl:px-[120px] lg:px-[64px] md:px-[32px] m-auto">
         <div className="mt-[90px]  md:flex md:justify-between">
           <div>
-            <h1 className=" font-Gambetta font-semibold text-[50px] lg:text-[54px] xl:text-[96px]">
+            <h1 className=" font-Gambetta leading-[108%] font-semibold text-[50px] lg:text-[54px] xl:text-[96px]">
               Halo, <br /> I'm Einstein
             </h1>
             <p className="font-Nunito text-[20px] xl:text-[32px] md:w-[390px] xl:w-[496px] font-medium">
@@ -49,29 +50,108 @@ const Home = () => {
         </div>
 
         {/* Featured works */}
+
         <div className="mt-[100px]">
-          <h2 className="font-Nunito font-semibold text-[38px]">
-            <span className="text-[gray]">Featured</span> Works
+          <h2 className="font-Nunito text-[24px] font-semibold md:text-[38px]">
+            <span className="  text-[gray]">Featured</span> Works
           </h2>
+          {/* MObile UI kit */}
           <div>
             <img src={mobile} />
             <div>
-              <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[24px] lg:text-[42px] ">
+              <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[24px] lg:text-[38px] ">
                 Mobile UI kit
               </h2>
-           <a target="_blank" href='https://www.figma.com/community/file/1132737808668818244' className="flex items-center justify-between">
-           <p className="w-auto text-[16px] md:w-[800px] text-[gray] font-normal lg:text-[28px] md:text-[20px]">
+
+              <p className="w-auto text-[14px] mb-2 text-[gray] lg:text-[24px] md:text-[20px]">
                 An open-source Mobile UI kit that helps designers enhance
                 consistency, thereby helping users make use of these designed
                 apps easily.
               </p>
-              <img className="hidden md:flex" src={arrow} />
-           </a>
+              <a
+                target="_blank"
+                href="https://www.figma.com/community/file/1132737808668818244"
+                className=" "
+              >
+                <button className="bg-[#1e1e1e] text-white text-[18px] w-[120px] md:w-[187px] h-[55px] rounded-[5px] ">
+                  {" "}
+                  View kit
+                </button>
+              </a>
             </div>
           </div>
+  {/* Main works items here */}
+          <div className="flex flex-col items-center justify-center">
+        {/* Edtech UI kit */}
+          <div className="flex mt-[80px] md:flex-row gap-[30px] items-center flex-col">
+            <div>
+              <img src={abc} alt="Edtech style guide" />
+            </div>
+            <div>
+              <h1 className="text-[30px] font-semibold font-Gambetta">
+                Edtech style guide
+              </h1>
+              <p className=" text-[16px] md:text-[18px] lg:text-[20px] lg:w-[420px] font-Nunito text-[gray]">
+                This design guide is all about making learning the alphabet
+                super fun for little kids{" "}
+              </p>
+              <Link
+               to="/Works/Edtech"
+              >
+                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[40px] text-white text-[18px] w-auto px-[14px] md:w-[187px] h-[55px] rounded-[5px] ">
+                  Read casestudy
+                </button>
+              </Link>
+            </div>
+          </div>
+          </div>
+
+          {/* <div className="flex flex-col md:flex-row gap-[40px] md:gap-[10px] lg:gap-[100px]">
+        <div>
+        <img className="md:w-[350px] lg-w-[200%]" src={abc} />
+              <div>
+                <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[28px] lg:text-[38px] ">
+                Edtech style guide
+                </h2>
+                <Link
+                  target="_blank"
+                  href="https://www.figma.com/community/file/1132737808668818244"
+                  className="flex items-center lg:w-[573px]"
+                >
+                  <p className=" text-[14px] xl:w-[300px] text-[gray] lg:text-[20px] md:text-[16px]">
+                    An open-source Mobile UI kit that helps designers enhance
+                    consistency, thereby helping users make use of these designed
+                    apps easily.
+                  </p>
+                  <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
+                </Link>
+              </div>
+        </div>
+        <div>
+        <img className="md:w-[350px] lg-w-auto" src={abc} />
+              <div>
+                <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[28px] lg:text-[38px] ">
+              Google meet
+                </h2>
+                <Link
+                  target="_blank"
+                  href="https://www.figma.com/community/file/1132737808668818244"
+                  className="flex items-center lg:w-[573px]"
+                >
+                  <p className=" text-[14px]  lg:w-auto text-[gray] lg:text-[20px] md:text-[16px]">
+                    An open-source Mobile UI kit that helps designers enhance
+                    consistency, thereby helping users make use of these designed
+                    apps easily.
+                  </p>
+                  <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
+                </Link>
+              </div>
+        </div>
+            </div> */}
+
           <div className="md:flex items-center  gap-10">
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
-              <img className="w-[90px] md:w-auto" src={jamb} />
+              <img src={jamb} />
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">
                   Jamb
@@ -81,7 +161,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
+            {/* <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <div className="mt-[28px] font-Nunito ">
                 <p className="lg:text-[40px] md:text-[32px] text-[28px]">
                   Edtech Style Guide
@@ -90,7 +170,7 @@ const Home = () => {
                   <Link to="/Works/Edtech"> Click to view casestudy</Link>
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <img className="w-[90px] md:w-auto" src={googlemeet} />
               <div className="mt-[28px] font-Nunito ">

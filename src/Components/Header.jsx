@@ -15,6 +15,10 @@ const Header = () => {
     {
       link: "/Aboutme",
       text: "About me"
+    },
+    {
+      link: "/dev",
+      text: "Dev"
     }
   ]
   return (
