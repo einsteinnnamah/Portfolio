@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import googlemeet from "../assets/Googlemeet/googlemeet.png";
 import mobile from "../assets/mobile.png";
 import abc from "../assets/abc.png";
-
+import form from "../assets/form.png"
 const Home = () => {
   return (
     <>
@@ -80,7 +80,7 @@ const Home = () => {
             </div>
             <div>
             <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              An Engaging EdTech Style Guide for Kids to Master the Alphabet
+              An engaging edtech style guide for kids to master the alphabet
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
               This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
@@ -96,11 +96,11 @@ const Home = () => {
 
           <div className="flex mt-[80px] gap-[30px] flex-col">
             <div>
-              <img className="lg:w-[440px] md:w-[340px] xl:w-auto" src={abc} alt="Edtech style guide" />
+              <img className="lg:w-[440px] md:w-[340px] xl:w-[570px]" src={form} alt="Edtech style guide" />
             </div>
             <div>
             <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              An Engaging EdTech Style Guide for Kids to Master the Alphabet
+              An engaging edtech style guide for kids to master the alphabet
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
               This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
@@ -108,7 +108,7 @@ const Home = () => {
                to="/Works/Edtech"
               >
                 <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] md:text-[16px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
-                  Read casestudy
+                  View site
                 </button>
               </Link>
             </div>
