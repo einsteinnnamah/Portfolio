@@ -106,13 +106,14 @@ const Home = () => {
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
               This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
-              <Link
-               to="/Works/Edtech"
+              <a
+              target="_blank"
+               href="https://www.figma.com/proto/6CCiv0daVHi5tBnh7h7bL3/DESIGN-CLAN-CHALLENGE?page-id=82%3A9&type=design&node-id=90-12&viewport=793%2C328%2C0.35&t=OWA7aZdBR581wmJK-1&scaling=min-zoom&starting-point-node-id=90%3A12&mode=design"
               >
                 <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
                   View site
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
           </div>
@@ -149,13 +150,11 @@ const Home = () => {
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
               This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
-              <Link
-               to="/Works/Edtech"
-              >
-                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+           
+                <button disabled className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
                   View site
                 </button>
-              </Link>
+           
             </div>
           </div>
           </div>
