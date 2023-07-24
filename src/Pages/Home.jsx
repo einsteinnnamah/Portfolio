@@ -11,6 +11,8 @@ import googlemeet from "../assets/Googlemeet/googlemeet.png";
 import mobile from "../assets/mobile.png";
 import abc from "../assets/abc.png";
 import form from "../assets/form.png"
+import gmail from "../assets/Gmail.png"
+import app from "../assets/APP.png"
 const Home = () => {
   return (
     <>
@@ -74,40 +76,40 @@ const Home = () => {
   {/* Main works items here */}
           <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Edtech UI kit */}
-          <div className="flex mt-[80px] gap-[30px] flex-col">
+          <div className="flex mt-[80px] gap-[20px] flex-col">
             <div>
               <img className="lg:w-[440px] md:w-[340px] xl:w-auto" src={abc} alt="Edtech style guide" />
             </div>
             <div>
             <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              An engaging edtech style guide for kids to master the alphabet
+              Edtech style guide
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
               This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
               <Link
                to="/Works/Edtech"
               >
-                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] md:text-[16px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
                   Read casestudy
                 </button>
               </Link>
             </div>
           </div>
 
-          <div className="flex mt-[80px] gap-[30px] flex-col">
+          <div className="flex mt-[80px] gap-[20px] flex-col">
             <div>
               <img className="lg:w-[440px] md:w-[340px] xl:w-[570px]" src={form} alt="Edtech style guide" />
             </div>
             <div>
             <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              An engaging edtech style guide for kids to master the alphabet
+              Toystores
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
               This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
               <Link
                to="/Works/Edtech"
               >
-                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] md:text-[16px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
                   View site
                 </button>
               </Link>
@@ -115,49 +117,50 @@ const Home = () => {
           </div>
           </div>
 
-          {/* <div className="flex flex-col md:flex-row gap-[40px] md:gap-[10px] lg:gap-[100px]">
-        <div>
-        <img className="md:w-[350px] lg-w-[200%]" src={abc} />
-              <div>
-                <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[28px] lg:text-[38px] ">
-                Edtech style guide
-                </h2>
-                <Link
-                  target="_blank"
-                  href="https://www.figma.com/community/file/1132737808668818244"
-                  className="flex items-center lg:w-[573px]"
-                >
-                  <p className=" text-[14px] xl:w-[300px] text-[gray] lg:text-[20px] md:text-[16px]">
-                    An open-source Mobile UI kit that helps designers enhance
-                    consistency, thereby helping users make use of these designed
-                    apps easily.
-                  </p>
-                  <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
-                </Link>
-              </div>
-        </div>
-        <div>
-        <img className="md:w-[350px] lg-w-auto" src={abc} />
-              <div>
-                <h2 className=" font-Gambetta font-semibold text-[20px] md:text-[28px] lg:text-[38px] ">
-              Google meet
-                </h2>
-                <Link
-                  target="_blank"
-                  href="https://www.figma.com/community/file/1132737808668818244"
-                  className="flex items-center lg:w-[573px]"
-                >
-                  <p className=" text-[14px]  lg:w-auto text-[gray] lg:text-[20px] md:text-[16px]">
-                    An open-source Mobile UI kit that helps designers enhance
-                    consistency, thereby helping users make use of these designed
-                    apps easily.
-                  </p>
-                  <img className="hidden md:flex md:w-[50px] lg-w-auto" src={arrow} />
-                </Link>
-              </div>
-        </div>
-            </div> */}
+                   <div className="flex flex-col md:flex-row items-center justify-between">
+        {/* Googlemmet UI kit */}
+          <div className="flex mt-[80px] gap-[20px] flex-col">
+            <div>
+              <img className="lg:w-[440px] md:w-[340px] xl:w-auto" src={gmail} alt="Edtech style guide" />
+            </div>
+            <div>
+            <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+              Edtech style guide
+              </h1>
+              <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+              This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
+              <Link
+               to="/Works/Googlemeet"
+              >
+                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+                  Read casestudy
+                </button>
+              </Link>
+            </div>
+          </div>
 
+          <div className="flex mt-[80px] gap-[20px] flex-col">
+            <div>
+              <img className="lg:w-[440px] md:w-[340px] xl:w-[570px]" src={app} alt="Edtech style guide" />
+            </div>
+            <div>
+            <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+              Toystores
+              </h1>
+              <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+              This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
+              <Link
+               to="/Works/Edtech"
+              >
+                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+                  View site
+                </button>
+              </Link>
+            </div>
+          </div>
+          </div>
+
+      
           <div className="md:flex items-center  gap-10">
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <img src={jamb} />
@@ -167,27 +170,6 @@ const Home = () => {
                 </p>
                 <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
                   <Link to="/Works/Jamb"> Click to view casestudy</Link>
-                </p>
-              </div>
-            </div>
-            {/* <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
-              <div className="mt-[28px] font-Nunito ">
-                <p className="lg:text-[40px] md:text-[32px] text-[28px]">
-                  Edtech Style Guide
-                </p>
-                <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                  <Link to="/Works/Edtech"> Click to view casestudy</Link>
-                </p>
-              </div>
-            </div> */}
-            <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
-              <img className="w-[90px] md:w-auto" src={googlemeet} />
-              <div className="mt-[28px] font-Nunito ">
-                <p className="lg:text-[40px] md:text-[32px] text-[28px]">
-                  Googlemeet
-                </p>
-                <p className="underline text-[20px] cursor-pointer text-[gray] lg:text-[24px] ">
-                  <Link to="/Works/Googlemeet"> Click to view casestudy</Link>
                 </p>
               </div>
             </div>
