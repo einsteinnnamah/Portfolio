@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 import googlemeet from "../assets/Googlemeet/googlemeet.png";
 import mobile from "../assets/mobile.png";
 import abc from "../assets/abc.png";
-import form from "../assets/form.png"
-import gmail from "../assets/Gmail.png"
-import app from "../assets/APP.png"
+import form from "../assets/form.png";
+import gmail from "../assets/Gmail.png";
+import app from "../assets/APP.png";
 const Home = () => {
   return (
     <>
@@ -73,95 +73,200 @@ const Home = () => {
               </a>
             </div>
           </div>
-  {/* Main works items here */}
+          {/* Main works items here */}
           <div className="flex flex-col md:flex-row items-center justify-between">
-        {/* Edtech UI kit */}
-          <div className="flex mt-[80px] gap-[20px] flex-col">
-            <div>
-              <img className="lg:w-[440px] md:w-[340px] xl:w-auto" src={abc} alt="Edtech style guide" />
+            {/* Edtech UI kit */}
+            <div className="flex mt-[80px] gap-[20px] flex-col">
+              <div>
+                <img
+                  className="lg:w-[440px] md:w-[340px] xl:w-auto"
+                  src={abc}
+                  alt="Edtech style guide"
+                />
+              </div>
+              <div>
+                <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+                  Edtech style guide
+                </h1>
+                <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+                  This ABCD learning style guide enhances engagement through
+                  vibrant visuals, interactive elements, and immediate feedback.
+                  A valuable resource for creating a fun and effective learning
+                  journey.{" "}
+                </p>
+                <Link to="/Works/Edtech">
+                  <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+                    Read casestudy
+                  </button>
+                </Link>
+              </div>
             </div>
-            <div>
-            <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              Edtech style guide
-              </h1>
-              <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-              This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
-              <Link
-               to="/Works/Edtech"
-              >
-                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
-                  Read casestudy
+
+            <div className="flex mt-[80px] gap-[20px] flex-col">
+              <div>
+                <img
+                  className="lg:w-[440px] md:w-[340px] xl:w-[570px]"
+                  src={form}
+                  alt="Edtech style guide"
+                />
+              </div>
+              <div>
+                <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+                  Toystores
+                </h1>
+                <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+                  Kidtoys Store is an online retail store that caters to
+                  children and parents, offering a wide range of high-quality
+                  and thoughtfully curated toys.{" "}
+                </p>
+
+                <div>
+
+<button
+                  disabled
+                  className="bg-[#1e1e1e] opacity-50 mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] "
+                >
+                  in development
                 </button>
-              </Link>
-            </div>
-          </div>
 
-          <div className="flex mt-[80px] gap-[20px] flex-col">
-            <div>
-              <img className="lg:w-[440px] md:w-[340px] xl:w-[570px]" src={form} alt="Edtech style guide" />
-            </div>
-            <div>
-            <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              Toystores
-              </h1>
-              <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-              This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
-              <a
-              target="_blank"
-               href="https://www.figma.com/proto/6CCiv0daVHi5tBnh7h7bL3/DESIGN-CLAN-CHALLENGE?page-id=82%3A9&type=design&node-id=90-12&viewport=793%2C328%2C0.35&t=OWA7aZdBR581wmJK-1&scaling=min-zoom&starting-point-node-id=90%3A12&mode=design"
-              >
-                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
-                  View site
+<a
+target="_blank" 
+href="https://www.figma.com/proto/6CCiv0daVHi5tBnh7h7bL3/DESIGN-CLAN-CHALLENGE?page-id=82%3A9&type=design&node-id=90-12&viewport=793%2C328%2C0.35&t=EINUcOW6r0Eb15N1-1&scaling=min-zoom&starting-point-node-id=90%3A12&mode=design" >
+                <button
+                  className="text-[#1e1e1e] mt-[10px] md:mt-[20px]  text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] "
+                >
+                 View figma prototye ⤴ 
                 </button>
-              </a>
+                </a>
+</div>
+              </div>
             </div>
           </div>
-          </div>
 
-                   <div className="flex flex-col md:flex-row items-center justify-between">
-        {/* Googlemmet UI kit */}
-          <div className="flex mt-[80px] gap-[20px] flex-col">
-            <div>
-              <img className="lg:w-[440px] md:w-[340px] xl:w-auto" src={gmail} alt="Edtech style guide" />
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Googlemmet UI kit */}
+            <div className="flex mt-[80px] gap-[20px] flex-col">
+              <div>
+                <img
+                  className="lg:w-[440px] md:w-[340px] xl:w-auto"
+                  src={gmail}
+                  alt="Edtech style guide"
+                />
+              </div>
+              <div>
+                <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+                  Gmail UI/UX audit
+                </h1>
+                <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+                  This UX audit of Google Meet revealed a notable issue when
+                  accepting new participants while screen sharing.
+                </p>
+                <Link to="/Works/Googlemeet">
+                  <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+                    Read casestudy
+                  </button>
+                </Link>
+              </div>
             </div>
-            <div>
-            <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              Gmail UI/UX audit
-              </h1>
-              <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-              This UX audit of Google Meet revealed a notable issue when accepting new participants while screen sharing.
 
- </p>
-              <Link
-               to="/Works/Googlemeet"
-              >
-                <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
-                  Read casestudy
+            <div className="flex mt-[80px] gap-[20px] flex-col">
+              <div>
+                <img
+                  className="lg:w-[440px] md:w-[340px] xl:w-[570px]"
+                  src={app}
+                  alt="Edtech style guide"
+                />
+              </div>
+              <div>
+                <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+                  Shop app
+                </h1>
+                <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+                  This ABCD learning style guide enhances engagement through
+                  vibrant visuals, interactive elements, and immediate feedback.
+                  A valuable resource for creating a fun and effective learning
+                  journey.{" "}
+                </p>
+<div>
+
+<button
+                  disabled
+                  className="bg-[#1e1e1e] opacity-50 mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] "
+                >
+                  in development
                 </button>
-              </Link>
-            </div>
-          </div>
 
-          <div className="flex mt-[80px] gap-[20px] flex-col">
-            <div>
-              <img className="lg:w-[440px] md:w-[340px] xl:w-[570px]" src={app} alt="Edtech style guide" />
-            </div>
-            <div>
-            <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              Shop app
-              </h1>
-              <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-              This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
-           
-                <button disabled className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
-                  View site
+< a 
+target="_blank"
+href="https://www.figma.com/proto/V6MKrFO9zggC01pJ0UHGP0/DESIGN?page-id=0%3A1&type=design&node-id=47-935&viewport=-1618%2C1443%2C0.3&t=HvmYmmvTsFo8dZwh-1&scaling=scale-down&starting-point-node-id=47%3A935&mode=design" >
+                <button
+                  className="text-[#1e1e1e] mt-[10px] md:mt-[20px]  text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] "
+                >
+                 View figma file ⤴ 
                 </button>
-           
+                </a>
+</div>
+              </div>
             </div>
           </div>
+
+
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            {/* Googlemmet UI kit */}
+            <div className="flex mt-[80px] gap-[20px] flex-col">
+              <div>
+                <img
+                  className="lg:w-[440px] md:w-[340px] xl:w-auto"
+                  src={gmail}
+                  alt="Edtech style guide"
+                />
+              </div>
+              <div>
+                <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+                  Techsteroid
+                </h1>
+                <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+                  This UX audit of Google Meet revealed a notable issue when
+                  accepting new participants while screen sharing.
+                </p>
+                <a href="">
+                  <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
+                    View figma file
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div className="flex mt-[80px] gap-[20px] flex-col">
+              <div>
+                <img
+                  className="lg:w-[440px] md:w-[340px] xl:w-[570px]"
+                  src={app}
+                  alt="Edtech style guide"
+                />
+              </div>
+              <div>
+                <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
+                  Booklyn app
+                </h1>
+                <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
+                  This ABCD learning style guide enhances engagement through
+                  vibrant visuals, interactive elements, and immediate feedback.
+                  A valuable resource for creating a fun and effective learning
+                  journey.{" "}
+                </p>
+
+                <button
+                  disabled
+                  className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] "
+                >
+                  View figma file
+                </button>
+              </div>
+            </div>
           </div>
 
-      
+
           <div className="md:flex items-center  gap-10">
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <img src={jamb} />
