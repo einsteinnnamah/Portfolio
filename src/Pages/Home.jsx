@@ -13,6 +13,8 @@ import abc from "../assets/abc.png";
 import form from "../assets/form.png";
 import gmail from "../assets/Gmail.png";
 import app from "../assets/APP.png";
+import tech from "../assets/TECH.png"
+import book from "../assets/book.png"
 const Home = () => {
   return (
     <>
@@ -182,10 +184,7 @@ href="https://www.figma.com/proto/6CCiv0daVHi5tBnh7h7bL3/DESIGN-CLAN-CHALLENGE?p
                   Shop app
                 </h1>
                 <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-                  This ABCD learning style guide enhances engagement through
-                  vibrant visuals, interactive elements, and immediate feedback.
-                  A valuable resource for creating a fun and effective learning
-                  journey.{" "}
+                Shop app your go-to app for shopping smarter and saving big! Discover top-notch resale products at unbeatable prices, from cars to everyday essentials, all in one effortless platform.
                 </p>
 <div>
 
@@ -216,8 +215,8 @@ href="https://www.figma.com/proto/V6MKrFO9zggC01pJ0UHGP0/DESIGN?page-id=0%3A1&ty
             <div className="flex mt-[80px] gap-[20px] flex-col">
               <div>
                 <img
-                  className="lg:w-[440px] md:w-[340px] xl:w-auto"
-                  src={gmail}
+                  className="lg:w-[440px] md:w-[340px] xl:w-[570px] "
+                  src={tech}
                   alt="Edtech style guide"
                 />
               </div>
@@ -226,10 +225,11 @@ href="https://www.figma.com/proto/V6MKrFO9zggC01pJ0UHGP0/DESIGN?page-id=0%3A1&ty
                   Techsteroid
                 </h1>
                 <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-                  This UX audit of Google Meet revealed a notable issue when
-                  accepting new participants while screen sharing.
+                TechSteroid is a digital media company that is committed to telling the untold Tech stories and Innovation on the African Continent through its digital publications, Virtual events, and Physical events.
                 </p>
-                <a href="">
+                <a 
+                target="_blank"
+                href="https://www.figma.com/proto/IxJBI19Bu3esqTjrgNGBGP/Designs?page-id=26%3A1185&type=design&node-id=27-1296&viewport=6249%2C2188%2C0.63&t=kWOnP86qmlXI14wc-1&scaling=min-zoom&mode=design">
                   <button className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] ">
                     View figma file
                   </button>
@@ -241,7 +241,7 @@ href="https://www.figma.com/proto/V6MKrFO9zggC01pJ0UHGP0/DESIGN?page-id=0%3A1&ty
               <div>
                 <img
                   className="lg:w-[440px] md:w-[340px] xl:w-[570px]"
-                  src={app}
+                  src={book}
                   alt="Edtech style guide"
                 />
               </div>
@@ -250,24 +250,25 @@ href="https://www.figma.com/proto/V6MKrFO9zggC01pJ0UHGP0/DESIGN?page-id=0%3A1&ty
                   Booklyn app
                 </h1>
                 <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-                  This ABCD learning style guide enhances engagement through
-                  vibrant visuals, interactive elements, and immediate feedback.
-                  A valuable resource for creating a fun and effective learning
-                  journey.{" "}
+                Dive into the joy of reading, expand your horizons, and embrace the wonders of lifelong learning. Ready to embark on this exciting journey with Booklyn
                 </p>
 
+                <a
+                target="_blank" 
+                href="https://www.figma.com/proto/4WZeqiZXD3O01nZ3eCVNzc/Booklyn-File?page-id=106%3A4&type=design&node-id=106-5&viewport=652%2C178%2C0.42&t=oot7Rntqc0d5ImHL-1&scaling=scale-down&starting-point-node-id=106%3A5&show-proto-sidebar=1&mode=design" >
+
                 <button
-                  disabled
                   className="bg-[#1e1e1e] mt-[10px] md:mt-[20px] text-white text-[18px] w-auto px-[14px] lg:w-auto md:w-[150px] h-[55px] rounded-[5px] "
                 >
                   View figma file
                 </button>
+                </a>
               </div>
             </div>
           </div>
 
 
-          <div className="md:flex items-center  gap-10">
+          {/* <div className="md:flex items-center  gap-10">
             <div className="flex  mt-[16px] flex-col md:w-[424px] h-[379px] border-solid border-[1px] rounded-[10px] border-[#808080]  p-10 justify-center items-start ">
               <img src={jamb} />
               <div className="mt-[28px] font-Nunito ">
@@ -279,7 +280,7 @@ href="https://www.figma.com/proto/V6MKrFO9zggC01pJ0UHGP0/DESIGN?page-id=0%3A1&ty
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Previous portfolio */}
