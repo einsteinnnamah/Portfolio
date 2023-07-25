@@ -17,7 +17,7 @@ const Header = () => {
       text: "About me"
     },
     {
-      link: "/dev",
+      link: "https://magical-heliotrope-79dbef.netlify.app/",
       text: "Dev"
     }
   ]
