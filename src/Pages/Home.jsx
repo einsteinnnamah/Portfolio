@@ -126,10 +126,12 @@ const Home = () => {
             </div>
             <div>
             <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              Edtech style guide
+              Gmail UI/UX audit
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
-              This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
+              This UX audit of Google Meet revealed a notable issue when accepting new participants while screen sharing.
+
+ </p>
               <Link
                to="/Works/Googlemeet"
               >
@@ -146,7 +148,7 @@ const Home = () => {
             </div>
             <div>
             <h1 className="text-[30px] md:text-[24px] md:w-[340px] lg:w-[440px] lg:text-[28px] xl:w-[570px] font-semibold font-Gambetta">
-              Toystores
+              Shop app
               </h1>
               <p className=" text-[16px] md:text-[16px] md:w-[340px] lg:w-[440px] lg:text-[20px] xl:w-[570px] font-Nunito text-[gray]">
               This ABCD learning style guide enhances engagement through vibrant visuals, interactive elements, and immediate feedback. A valuable resource for creating a fun and effective learning journey. </p>
