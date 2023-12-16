@@ -1,9 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import Header from "../Components/Header";
-import { BehanceIcon, GithubICon, InstagramIcon, LinkedinIcon, MediumIcon, XIcon } from "../Components/Icons";
+import { BehanceIcon, GithubICon, InstagramIcon, LeftArrowCircle, LinkedinIcon, MediumIcon, RightArrowCircle, RightArrowCurve, XIcon } from "../Components/Icons";
 import Inprogress from "../Components/Inprogress";
-import pics from "../assets/pics.png";
+import pics from "../assets/einstein.png";
+import Works from "../Components/Works";
+import Events from "../Components/Events";
+import Portfolio from "../Components/Portfolio";
 
 const Home = () => {
   const IconData = [
@@ -42,8 +45,8 @@ const Home = () => {
     <>
       <Inprogress />
       <Header />
-      <section className="w-full grid md:grid-cols-3 grid-cols-1 h-[500px] p-4">
-        <div className="w-full border flex-col items-start justify-center">
+      <section className="w-full grid md:grid-cols-3 grid-cols-1 p-4 h-[80vh] gap-3">
+        <div className="w-full flex-col items-start justify-center">
           <div className="w-full mx-auto rounded-xl">
             <img src={pics} alt="This is an Image of Einstein Nnamah"  className="w-full rounded-xl"/>
           </div>
@@ -55,18 +58,21 @@ const Home = () => {
             {
               IconData.map((icon, i) => {
                 return (
-                  <div className="flex gap-2 items-center justify-center font-semibold px-[18px] py-2 bg-black/30 rounded-[30px]" key={i}>
+                  <div className="flex gap-2 items-center justify-center text-sm lg:text-base font-semibold px-[18px] py-2 bg-black/30 rounded-[30px]" key={i}>
                     {icon.logo} {icon.name}
                   </div>
                 )
               })
             }
           </div>
+          <p className="w-full text-left text-sm flex items-center justify-start py-2 gap-3 text-[#808080]"><RightArrowCurve /> View my cv 👨‍💼 </p>
         </div>
-        <div className="w-full border md:col-span-2 flex-col items-start justify-center">
-
+        <div className="w-full md:col-span-2 flex-col items-start justify-center">
+          <Portfolio/>
         </div>
       </section>
+      <Works />
+      <Events/>
     </>
   );
 };
