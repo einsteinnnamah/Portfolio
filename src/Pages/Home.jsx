@@ -5,8 +5,8 @@ import { BehanceIcon, GithubICon, InstagramIcon, LeftArrowCircle, LinkedinIcon, 
 import Inprogress from "../Components/Inprogress";
 import pics from "../assets/einstein.png";
 import Works from "../Components/Works";
-import Events from "../Components/Events";
 import Portfolio from "../Components/Portfolio";
+import Footer from "../Components/Footer"
 
 const Home = () => {
   
@@ -23,13 +23,15 @@ const Home = () => {
             <h1 className="text-white font-Satoshi lg:text-[30px] text-[28px] font-bold flex-col relative py-3">I'm Einstein <div className="absolute left-12 top-12"><RedLine/></div></h1>
             <p className="text-white text-[18px] lg:text-[22px] md:w-[280px] lg:w-[320px] xl:w-[369px] font-Satoshi">A product designer and product strategist (i craft long-term product visions and strategies)</p>
           </div>
-          <a href="https://docs.google.com/document/d/1EknG27bB2kukjc_T-MkMga3ztID9_TT3LUz8iwUIOUw/edit?usp=sharing" target="_blank" className="text-left lg:text-[18px] text-[16px] font-medium flex font-Satoshi items-center justify-start underline-offset-2 hover:underline cursor-pointer  py-2 gap-3 text-white"><RightArrowCurve /> View my cv 👨‍💼 </a>
+          <a href="https://docs.google.com/document/d/1EknG27bB2kukjc_T-MkMga3ztID9_TT3LUz8iwUIOUw/edit?usp=sharing" target="_blank" className="text-left lg:text-[18px] text-[16px] font-medium flex font-Satoshi items-center justify-start cursor-pointer  py-2 gap-3 text-white"><RightArrowCurve /> <span className=" underline-offset-2 hover:underline"> View my cv</span> 👨‍💼  </a>
         </div>
-        <div className="w-full border rounded-[10px] border-red-600 h-[250px] md:h-[300px] lg:h-[450px]">
+        <div className="w-full border rounded-[10px] border-red-600 h-[250px] text-white flex items-center justify-center font-Satoshi font-bold md:h-[300px] lg:h-[450px]">
+          Short video coming soon
         </div>
       </section>
       <Portfolio /> 
       <Works />
+      <Footer />
       {/* <Events/> */}
     </>
   );

@@ -41,7 +41,7 @@ const Works = () => {
     {
       id: 6,
       image: "",
-      title: "What is Brand Entropy",
+      title: "What is Brand Entropy ?",
       link: "https://medium.com/@einsteinnnamah/what-is-brand-entropy-195fe589d373"
     },
   ];
@@ -65,11 +65,11 @@ const Works = () => {
 
   return (
     <div className="max-w-[1440px] mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5">
-      <header className="flex items-center justify-between w-full font-Satoshi font-medium text-white py-3 md:text-[24px] lg:text-[30px]">
+      <header className="flex items-center justify-between w-full font-Satoshi font-medium text-white py-3 text-[22px] md:text-[24px] lg:text-[30px]">
         Some of my piece ✍️
         <div className=" items-center justify-end gap-3 flex">
-          <div className="cursor-pointer" onClick={handlePrevPage}>
-            <LeftArrowCircle />
+          <div className="cursor-pointer " onClick={handlePrevPage}>
+            <LeftArrowCircle/>
           </div>
           <div  className="cursor-pointer" onClick={handleNextPage}>
             <RightArrowCircle />
@@ -84,9 +84,9 @@ const Works = () => {
                 backgroundColor:
                   color[Math.floor(Math.random() * color.length)],
               }}
-              className="w-full rounded-xl h-[300px] flex flex-col items-center justify-center"
+              className="w-full rounded-xl h-[300px] flex flex-col items-center cursor-pointer justify-center"
             >
-              <a href={item.link} target="_blank" className="text-black text-[26px] md:text-[28px] lg:text-[32px] xl:text-[40px] px-[53px] py-[67px] font-medium font-Satoshi underline-offset-2 hover:underline  p-2 transition-all duration-500 cursor-pointer">
+              <a href={item.link} target="_blank" className="text-black text-[26px] md:text-[28px] lg:text-[32px] xl:text-[40px] px-[24px] md:px-[53px] md:py-[67px] font-bold font-Satoshi underline-offset-2 hover:underline  p-2 transition-all duration-500 cursor-pointer">
                 {item.title}
               </a>
               
