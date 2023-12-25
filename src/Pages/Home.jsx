@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import Header from "../Components/Header";
-import { BehanceIcon, GithubICon, InstagramIcon, LeftArrowCircle, LinkedinIcon, MediumIcon, RightArrowCircle, RightArrowCurve, XIcon } from "../Components/Icons";
+import { BehanceIcon, GithubICon, InstagramIcon, LeftArrowCircle, LinkedinIcon, MediumIcon, RedLine, RightArrowCircle, RightArrowCurve, XIcon } from "../Components/Icons";
 import Inprogress from "../Components/Inprogress";
 import pics from "../assets/einstein.png";
 import Works from "../Components/Works";
@@ -9,70 +9,29 @@ import Events from "../Components/Events";
 import Portfolio from "../Components/Portfolio";
 
 const Home = () => {
-  const IconData = [
-    {
-      name: 'Instagram',
-      logo: <InstagramIcon />,
-      link: '',
-    },
-    {
-      name: 'X(Twitter)',
-      logo: <XIcon />,
-      link: '',
-    },
-    {
-      name: 'Github',
-      logo: <GithubICon />,
-      link: '',
-    },
-    {
-      name: 'Medium',
-      logo: <MediumIcon />,
-      link: '',
-    },
-    {
-      name: 'LinkedIn',
-      logo: <LinkedinIcon />,
-      link: '',
-    },
-    {
-      name: 'Behance',
-      logo: <BehanceIcon />,
-      link: '',
-    },
-  ]
+  
   return (
     <>
       <Inprogress />
       <Header />
-      <section className="w-full grid md:grid-cols-3 grid-cols-1 p-4 h-[80vh] gap-3">
+      <section className="max-w-[1240px] mx-auto grid md:grid-cols-3 grid-cols-1 p-4 gap-3">
         <div className="w-full flex-col items-start justify-center">
           <div className="w-full mx-auto rounded-xl">
             <img src={pics} alt="This is an Image of Einstein Nnamah"  className="w-full rounded-xl"/>
           </div>
           <div className="w-full py-3">
-            <h1 className="text-black font-Nunito text-2xl font-bold">Halo, I am Einstein Nnamah</h1>
-            <p className="text-black/60  text-sm font-Nunito">A product designer living in Nigeria, focused on creating long lasting experiences :)</p>
+            <h1 className="text-white font-Nunito text-3xl font-bold flex-col relative py-3">I'm Einstein <div className="absolute left-12 top-12"><RedLine/></div></h1>
+            <p className="text-white  text-base font-Nunito">A product designer and product strategist (i craft long-term product visions and strategies)</p>
           </div>
-          <div className="w-full flex flex-wrap gap-2">
-            {
-              IconData.map((icon, i) => {
-                return (
-                  <div className="flex gap-2 items-center justify-center text-sm lg:text-base font-semibold px-[18px] py-2 bg-black/30 rounded-[30px]" key={i}>
-                    {icon.logo} {icon.name}
-                  </div>
-                )
-              })
-            }
-          </div>
-          <p className="w-full text-left text-sm flex items-center justify-start py-2 gap-3 text-[#808080]"><RightArrowCurve /> View my cv 👨‍💼 </p>
+          
+          <p className="w-full text-left text-sm flex items-center justify-start py-2 gap-3 text-white"><RightArrowCurve /> View my cv 👨‍💼 </p>
         </div>
-        <div className="w-full md:col-span-2 flex-col items-start justify-center">
-          <Portfolio/>
+        <div className="w-full md:col-span-2 flex-col items-start justify-center border border-red-600 h-[450px]">
         </div>
       </section>
+      <Portfolio />
       <Works />
-      <Events/>
+      {/* <Events/> */}
     </>
   );
 };
