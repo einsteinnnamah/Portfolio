@@ -67,8 +67,8 @@ const Works = () => {
   // const loremIpsum = "Lorem ipsum dolit amet consectetur. Id sit lectus quis lobortis id. Venenatis donec vestibulum platea duis. Purus integer sed dolor diam nunc ornare proin euismod sed. Risus egestas ac vulputate nulla adipiscing magna vulputate neque.";
 
   return (
-    <div className="max-w-[1240px] mx-auto p-3">
-      <header className="flex items-center justify-between w-full text-white py-3 text-xl">
+    <div className="max-w-[1440px] mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5">
+      <header className="flex items-center justify-between w-full font-Satoshi font-medium text-white py-3 md:text-[24px] lg:text-[30px]">
         Some of my piece ✍️
         <div className=" items-center justify-end gap-3 flex">
           <div onClick={handlePrevPage}>
@@ -89,7 +89,7 @@ const Works = () => {
               }}
               className="w-full rounded-xl h-[300px] flex items-center justify-center"
             >
-              <p className="text-black text-5xl hover:underline w-full text-left p-2 transition-all duration-500 cursor-pointer">
+              <p className="text-black text-[26px] md:text-[28px] lg:text-[32px] xl:text-[42px] px-[53px] py-[67px] font-medium font-Satoshi underline-offset-2 hover:underline  p-2 transition-all duration-500 cursor-pointer">
                 {item.title}
               </p>
             </div>
