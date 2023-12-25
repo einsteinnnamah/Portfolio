@@ -4,48 +4,45 @@ import { LeftArrowCircle, RightArrow, RightArrowCircle } from "./Icons";
 const Works = () => {
   const [currentPage, setCurrentPage] = React.useState(0);
   const articlesPerPage = 2;
-  const color = ["#F9CECA", "#F7D3B2"];
+  const color = ["#F9CECA", "#F7D3B2", "#C1CEE4"];
 
   const articles = [
     {
       id: 1,
       image: "",
       title: "I tried a leadership position for the first time",
+      link: "https://medium.com/@einsteinnnamah/i-tried-a-leadership-position-for-the-first-time-cd76415fd839",
+      date: "Jan 2"
     },
     {
       id: 2,
       image: "",
-      title: "I tried a leadership position for the first time",
+      title: "Those thoughts! Write it",
+      link: "https://medium.com/@einsteinnnamah/those-thoughts-write-it-5ebab4265e8a"
     },
     {
       id: 3,
       image: "",
-      title: "I tried a leadership position for the first time",
+      title: "Companies can be missing out on a market, simply because they’re not designing for it",
+      link: "https://medium.com/design-bootcamp/companies-can-be-missing-out-on-a-market-simply-because-theyre-not-designing-for-it-1815d770e7d9"
     },
     {
       id: 4,
       image: "",
-      title: "I tried a leadership position for the first time",
+      title: "Designing for Trust (Airbnb)",
+      link: "https://medium.com/@einsteinnnamah/designing-for-trust-2d127f404a2c"
     },
     {
       id: 5,
       image: "",
-      title: "I tried a leadership position for the first time",
+      title: "Why Companies Should Take Brand Credibility Seriously",
+      link: "https://medium.com/design-bootcamp/why-companies-should-take-brand-credibility-seriously-14aeb743c995"
     },
     {
       id: 6,
       image: "",
-      title: "I tried a leadership position for the first time",
-    },
-    {
-      id: 7,
-      image: "",
-      title: "I tried a leadership position for the first time",
-    },
-    {
-      id: 8,
-      image: "",
-      title: "I tried a leadership position for the first time",
+      title: "What is Brand Entropy",
+      link: "https://medium.com/@einsteinnnamah/what-is-brand-entropy-195fe589d373"
     },
   ];
   const totalPages = Math.ceil(articles.length / articlesPerPage);
@@ -71,10 +68,10 @@ const Works = () => {
       <header className="flex items-center justify-between w-full font-Satoshi font-medium text-white py-3 md:text-[24px] lg:text-[30px]">
         Some of my piece ✍️
         <div className=" items-center justify-end gap-3 flex">
-          <div onClick={handlePrevPage}>
+          <div className="cursor-pointer" onClick={handlePrevPage}>
             <LeftArrowCircle />
           </div>
-          <div onClick={handleNextPage}>
+          <div  className="cursor-pointer" onClick={handleNextPage}>
             <RightArrowCircle />
           </div>
         </div>
@@ -87,11 +84,12 @@ const Works = () => {
                 backgroundColor:
                   color[Math.floor(Math.random() * color.length)],
               }}
-              className="w-full rounded-xl h-[300px] flex items-center justify-center"
+              className="w-full rounded-xl h-[300px] flex flex-col items-center justify-center"
             >
-              <p className="text-black text-[26px] md:text-[28px] lg:text-[32px] xl:text-[42px] px-[53px] py-[67px] font-medium font-Satoshi underline-offset-2 hover:underline  p-2 transition-all duration-500 cursor-pointer">
+              <a href={item.link} target="_blank" className="text-black text-[26px] md:text-[28px] lg:text-[32px] xl:text-[40px] px-[53px] py-[67px] font-medium font-Satoshi underline-offset-2 hover:underline  p-2 transition-all duration-500 cursor-pointer">
                 {item.title}
-              </p>
+              </a>
+              
             </div>
           </article>
         ))}
