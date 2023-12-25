@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Inprogress />
-      <Header />
+      <Header  />
       <section className="max-w-[1440px] mx-auto flex md:flex-row  flex-col gap-[50px] md:gap-[22px] xl:gap-[53px] md:px-[60px] px-[20px] xl:px-[120px] py-10">
         <div className=" flex-col items-start justify-center">
           <div className="">

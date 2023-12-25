@@ -1,18 +1,26 @@
-import React from 'react'
-
+import React from "react";
+import { motion } from "framer-motion";
 const Header = () => {
   return (
-    <div className='max-w-[1440px] mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5 flex items-center justify-between'>
-      <div className='font-Satoshi font-bold justify-start text-[22px] md:text-[28px] text-white'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="max-w-[1440px] mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5 flex items-center justify-between"
+    >
+      <div className="font-Satoshi font-bold justify-start text-[22px] md:text-[28px] text-white">
         Einstein.N
       </div>
       <div>
-        <button className='bg-white text-black hover:bg-[#FF0000] hover:text-[white] rounded-[10px] ease-in duration-150 font-Satoshi text-[16px] md:text-[18px] font-semibold cursor-pointer inline-block p-[20px] py-2'>
+        <motion.button
+         whileHover={{ scale: 1.1 }}
+         whileTap={{ scale: 0.9 }}
+        className="bg-white text-black hover:bg-[#FF0000] hover:text-[white] rounded-[10px] ease-in duration-150 font-Satoshi text-[16px] md:text-[18px] font-semibold cursor-pointer inline-block p-[20px] py-2">
           Buzz me
-        </button>
+        </motion.button>
       </div>
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default Header
+export default Header;
