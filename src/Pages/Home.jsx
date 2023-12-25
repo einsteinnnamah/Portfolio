@@ -14,22 +14,22 @@ const Home = () => {
     <>
       <Inprogress />
       <Header />
-      <section className="max-w-[1240px] mx-auto grid md:grid-cols-3 grid-cols-1 p-4 gap-3">
-        <div className="w-full flex-col items-start justify-center">
-          <div className="w-full mx-auto rounded-xl">
-            <img src={pics} alt="This is an Image of Einstein Nnamah"  className="w-full rounded-xl"/>
+      <section className="max-w-[1440px] mx-auto flex md:flex-row  flex-col gap-[50px] md:gap-[22px] xl:gap-[53px] md:px-[60px] px-[20px] xl:px-[120px] py-10">
+        <div className=" flex-col items-start justify-center">
+          <div className="">
+            <img src={pics} alt="This is an Image of Einstein Nnamah"  className="md:w-[70%] w-full"/>
           </div>
-          <div className="w-full py-3">
-            <h1 className="text-white font-Nunito text-3xl font-bold flex-col relative py-3">I'm Einstein <div className="absolute left-12 top-12"><RedLine/></div></h1>
-            <p className="text-white  text-base font-Nunito">A product designer and product strategist (i craft long-term product visions and strategies)</p>
+          <div className=" py-3">
+            <h1 className="text-white font-Satoshi lg:text-[30px] text-[28px] font-bold flex-col relative py-3">I'm Einstein <div className="absolute left-12 top-12"><RedLine/></div></h1>
+            <p className="text-white text-[18px] lg:text-[22px] md:w-[280px] lg:w-[320px] xl:w-[369px] font-Satoshi">A product designer and product strategist (i craft long-term product visions and strategies)</p>
           </div>
           
-          <p className="w-full text-left text-sm flex items-center justify-start py-2 gap-3 text-white"><RightArrowCurve /> View my cv 👨‍💼 </p>
+          <p className="text-left lg:text-[18px] text-[16px] font-medium flex font-Satoshi items-center justify-start  py-2 gap-3 text-white"><RightArrowCurve /> View my cv 👨‍💼 </p>
         </div>
-        <div className="w-full md:col-span-2 flex-col items-start justify-center border border-red-600 h-[450px]">
+        <div className="w-full border rounded-[10px] border-red-600 h-[250px] md:h-[300px] lg:h-[450px]">
         </div>
       </section>
-      <Portfolio />
+      <Portfolio /> 
       <Works />
       {/* <Events/> */}
     </>
