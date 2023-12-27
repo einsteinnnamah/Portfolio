@@ -11,28 +11,28 @@ const Portfolio = () => {
       image: typo,
       title: "Declutter",
       brief:
-        "EngageInbox is a sophisticated email marketing web application designed to empower businesses to create, manage, and optimize their email marketing campaigns with ease. ",
+        "EngageInbox is a sophisticated email marketing web  ",
     },
     {
       id: 2,
       image: typo,
       title: "Declutter",
       brief:
-        "EngageInbox is a sophisticated email marketing web application designed to empower businesses to create, manage, and optimize their email marketing campaigns with ease. ",
+        "EngageInbox is a sophisticated email marketing web  ",
     },
     {
       id: 3,
       image: typo,
       title: "Declutter",
       brief:
-        "EngageInbox is a sophisticated email marketing web application designed to empower businesses to create, manage, and optimize their email marketing campaigns with ease. ",
+        "EngageInbox is a sophisticated email marketing web ",
     },
     {
       id: 4,
       image: typo,
       title: "Declutter",
       brief:
-        "EngageInbox is a sophisticated email marketing web application designed to empower businesses to create, manage, and optimize their email marketing campaigns with ease. ",
+        "EngageInbox is a sophisticated email marketing web ",
     },
   ];
 
@@ -50,10 +50,11 @@ const Portfolio = () => {
             <img src={item.image} alt={item.brief} className="w-full h-full object-cover rounded-[15px] transition-transform duration-500 transform hover:scale-105"/>
           </div>
           {hoveredArticle === item.id && (
-            <div className="bg-black/70 absolute top-0 left-0 bottom-0 right-0 flex items-end justify-start rounded-[15px] transition-opacity duration-500 opacity-0 hover:opacity-100">
-              <p className="p-8 w-full underline-offset-2 hover:underline text-left text-white text-[24px] cursor-pointer">
+            <div className="bg-black/70 absolute top-0 left-0 bottom-0 right-0 flex flex-col justify-end gap-[8px] rounded-[15px] transition-opacity duration-500 opacity-0 hover:opacity-100">
+              <p className="px-[32px]  w-full underline-offset-2 hover:underline text-left text-white text-[24px] cursor-pointer">
                 {item.title}
               </p>
+              <p className="px-[32px] w-[350px] pb-[32px] text-white">{item.brief}</p>
             </div>
           )}
         </article>
@@ -64,7 +65,11 @@ const Portfolio = () => {
           <div className=" flex flex-col gap-y-[16px]">
             <img src={item.image} alt={item.brief} className=""/>
             <div className="flex justify-between items-center">
-            <h2 className="text-white font-medium">{item.title}</h2>
+              <div>
+              <h2 className="text-white font-bold">{item.title}</h2>
+              <p className="text-[14px] text-white w-[250px]">{item.brief}</p>
+              </div>
+           
             <button className="text-black bg-white px-[10px] cursor-pointer py-[5px] rounded-[10px]">Open</button>
             </div>
           
