@@ -1,39 +1,43 @@
 import React from "react";
 import { RightArrow } from "./Icons";
 import typo from '../assets/declutter.png'
-
+import zap from '../assets/zap.png'
+import swapgo from '../assets/swapgo.png'
+import selldot from '../assets/selldoot.png'
 const Portfolio = () => {
   const [hoveredArticle, setHoveredArticle] = React.useState(null);
 
   const portfolio = [
     {
       id: 1,
-      image: typo,
-      title: "Declutter",
+      image: zap,
+      title: "Zap logistics 'soon'",
+      button: "coming soon",
+      link: "",
       brief:
-        "EngageInbox is a sophisticated email marketing web  ",
+        "ZAP is a mobility and logistics company specializing in connecting businesses and individuals with delivery agents  ",
     },
     {
       id: 2,
-      image: typo,
-      title: "Declutter",
+      image: swapgo,
+      title: "Swapgo",
       brief:
-        "EngageInbox is a sophisticated email marketing web  ",
+        "Swapgo the money app that gives you absolute control over your exchange rates.  ",
     },
     {
       id: 3,
-      image: typo,
-      title: "Declutter",
+      image: selldot,
+      title: "Selldot",
       brief:
-        "EngageInbox is a sophisticated email marketing web ",
+        "Selldot helps customers to buy and sell used and new item by helping them vet quality used item",
     },
-    {
-      id: 4,
-      image: typo,
-      title: "Declutter",
-      brief:
-        "EngageInbox is a sophisticated email marketing web ",
-    },
+    // {
+    //   id: 4,
+    //   image: typo,
+    //   title: "Declutter",
+    //   brief:
+    //     "EngageInbox is a sophisticated email marketing web ",
+    // },
   ];
 
   return (
