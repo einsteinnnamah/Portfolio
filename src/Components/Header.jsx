@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <motion.div
@@ -9,7 +10,7 @@ const Header = () => {
       className="max-w-[1440px] mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5 flex items-center justify-between"
     >
       <div className="font-Satoshi font-bold justify-start text-[22px] md:text-[28px] text-white">
-        Einstein.N
+      <Link to="/">  Einstein.N </Link>
       </div>
       <div>
         <motion.button

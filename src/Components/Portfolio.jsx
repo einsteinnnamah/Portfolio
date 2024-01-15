@@ -4,6 +4,7 @@ import typo from '../assets/declutter.png'
 import zap from '../assets/zap.png'
 import swapgo from '../assets/swapgo.png'
 import selldot from '../assets/selldoot.png'
+import { Link } from "react-router-dom";
 const Portfolio = () => {
   const [hoveredArticle, setHoveredArticle] = React.useState(null);
 
@@ -11,9 +12,9 @@ const Portfolio = () => {
     {
       id: 1,
       image: zap,
-      title: "Zap logistics 'soon'",
+      title: "Zap logistics",
       button: "coming soon",
-      link: "",
+      link: "https://berry-echidna-297.notion.site/Zap-logistics-Case-study-780b89596db2444a9082adf8d8f7c217?pvs=4",
       brief:
         "ZAP is a mobility and logistics company specializing in connecting businesses and individuals with delivery agents  ",
     },
@@ -21,6 +22,7 @@ const Portfolio = () => {
       id: 2,
       image: swapgo,
       title: "Swapgo",
+      link: "/Swapgo",
       brief:
         "Swapgo the money app that gives you absolute control over your exchange rates.  ",
     },
@@ -55,9 +57,9 @@ const Portfolio = () => {
           </div>
           {hoveredArticle === item.id && (
             <div className="bg-black/70 absolute top-0 left-0 bottom-0 right-0 flex flex-col justify-end gap-[8px] rounded-[15px] transition-opacity duration-500 opacity-0 hover:opacity-100">
-              <p className="px-[32px]  w-full underline-offset-2 hover:underline text-left text-white text-[24px] cursor-pointer">
+             <Link to={item.link} > <p className="px-[32px]  w-full underline-offset-2 hover:underline text-left text-white text-[24px] cursor-pointer">
                 {item.title}
-              </p>
+              </p> </Link>
               <p className="px-[32px] w-[350px] pb-[32px] text-white">{item.brief}</p>
             </div>
           )}
@@ -74,7 +76,7 @@ const Portfolio = () => {
               <p className="text-[14px] text-white w-[250px]">{item.brief}</p>
               </div>
            
-            <button className="text-black bg-white px-[10px] cursor-pointer py-[5px] rounded-[10px]">Open</button>
+           <Link to={item.link} > <button className="text-black bg-white px-[10px] cursor-pointer py-[5px] rounded-[10px]">Open</button></Link>
             </div>
           
           </div>
