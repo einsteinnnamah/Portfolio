@@ -44,6 +44,18 @@ const Works = () => {
       title: "What is Brand Entropy ?",
       link: "https://medium.com/@einsteinnnamah/what-is-brand-entropy-195fe589d373"
     },
+    {
+      id: 7,
+      image: "",
+      title: "Designers should consider this scenario when designing an onboarding screen",
+      link: "https://medium.com/design-bootcamp/designers-should-consider-this-scenario-when-designing-an-onboarding-screen-49322894d1d1"
+    },
+    {
+      id: 8,
+      image: "",
+      title: "Guesses make messes",
+      link: "https://medium.com/design-bootcamp/guesses-make-messes-e2735750e770"
+    },
   ];
   const totalPages = Math.ceil(articles.length / articlesPerPage);
 

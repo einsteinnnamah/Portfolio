@@ -25,8 +25,9 @@ const Home = () => {
           </div>
           <a href="https://docs.google.com/document/d/1EknG27bB2kukjc_T-MkMga3ztID9_TT3LUz8iwUIOUw/edit?usp=sharing" target="_blank" className="text-left lg:text-[18px] text-[16px] font-medium flex font-Satoshi items-center justify-start cursor-pointer  py-2 gap-3 text-white"><RightArrowCurve /> <span className=" underline-offset-2 hover:underline"> View my cv</span> 👨‍💼  </a>
         </div>
-        <div className="w-full border rounded-[10px] border-red-600 h-[250px] text-white flex items-center justify-center font-Satoshi font-bold md:h-[300px] lg:h-[450px]">
-          Short video coming soon
+        <div className="w-full border rounded-[10px] border-red-600 h-[250px] text-center text-white flex flex-col items-center justify-center font-Satoshi font-bold md:h-[300px] lg:h-[450px]">
+          Short video coming soon <br />
+         <Link to="/Aboutme" className="underline"> Read more about me </Link>
         </div>
       </section>
       <Portfolio /> 
