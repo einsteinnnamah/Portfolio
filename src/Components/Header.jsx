@@ -12,14 +12,14 @@ const Header = () => {
       <div className="font-Satoshi font-bold justify-start text-[22px] md:text-[28px] text-white">
       <Link to="/">  Einstein.N </Link>
       </div>
-      <div>
+      <a href="mailto:einsteinnnamah@gmail.com">
         <motion.button
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
         className="bg-white text-black hover:bg-[#FF0000] hover:text-[white] rounded-[10px] ease-in duration-150 font-Satoshi text-[16px] md:text-[18px] font-semibold cursor-pointer inline-block p-[20px] py-2">
           Buzz me
         </motion.button>
-      </div>
+      </a>
     </motion.div>
   );
 };

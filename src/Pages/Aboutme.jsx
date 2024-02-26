@@ -19,7 +19,7 @@ const Aboutme = () => {
 
            <div className="mt-[50px]">
             <h3 className=" font-Satoshi font-bold text-[#AAAAAA] text-[20px]  md:text-[24px]">Early in my career</h3>
-            <p className=" text-[18px] md:text-[20px] text-white lg:w-[808px]"> I initial started Front End Development  during the summer holidays when i was still in junior secondary school, this time trying my hands on HTML, CSS still scared of JS, i developed a couple of website discovered they were shitty because i don’t have design knowledge, even tho, this fueled my drive to learn more product design, the point where i said “damn this is what i really want” was when i came in contact with Victor Fatanmi and   the work he did with Fourthcanvas. This was what led me to make the decision that i gats learn this and I really wanna get known for this.</p>
+            <p className=" text-[18px] md:text-[20px] text-white lg:w-[808px]"> I initial started Front End Development  during the summer holidays when i was still in junior secondary school, this time trying my hands on HTML, CSS still scared of JS, i developed a couple of website discovered they were shitty because i don’t have design knowledge, even tho, this fueled my drive to learn more product design, the point where i said “damn this is what i really want” was when i came in contact with <a href="https://www.linkedin.com/in/victorfatanmi/" className="underline" target="_blank">Victor Fatanmi</a>  and   the work he did with <a href="https://www.fourthcanvas.co/" className="underline" target="_blank">Fourthcanvas.</a> This was what led me to make the decision that i gats learn this and I really wanna get known for this.</p>
           </div>
 
            <div className="mt-[50px]">

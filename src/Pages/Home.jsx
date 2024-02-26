@@ -27,6 +27,7 @@ const Home = () => {
         </div>
         <div className="w-full border rounded-[10px] border-red-600 h-[250px] text-center text-white flex flex-col items-center justify-center font-Satoshi font-bold md:h-[300px] lg:h-[450px]">
           Short video coming soon <br />
+          But <br/>
          <Link to="/Aboutme" className="underline"> Read more about me </Link>
         </div>
       </section>

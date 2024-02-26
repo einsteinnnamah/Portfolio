@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='max-w-[1440px] mx-auto font-Satoshi gap-[24px] font-semibold md:px-[60px] xl:px-[120px] px-[20px] py-[100px] text-white flex md:flex-row flex-col justify-between'>
       <div className='text-[18px] md:text-[20px]'>
         <h3 className=''>Lagos, NG</h3>
-        <h3 className='hover:underline underline-offset-2 cursor-pointer' >einsteinnnamah@gmail.com</h3>
+        <a href='mailto:einsteinnnamah@gmail.com"' className='hover:underline underline-offset-2 cursor-pointer' >einsteinnnamah@gmail.com</a>
       </div>
       <div>
      <div className='flex gap-[20px] text-[18px] md:text-[20px]'>
