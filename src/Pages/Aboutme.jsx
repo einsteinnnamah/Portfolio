@@ -25,7 +25,7 @@ const Aboutme = () => {
            <div className="mt-[50px]">
             <h3 className=" font-Satoshi font-bold text-[#AAAAAA] text-[20px]  md:text-[24px]">Present</h3>
             <p className=" text-[18px] md:text-[20px] text-white lg:w-[808px]"> Recently, i still find myself amazed at the way i am able to conceptualize a problem and then transition it into a working product design, i have always imagined these during when i just started product design,
-            I’ve worked on a couple products mostly startups, which is really interesting because i had to get into a boat with the intention to push this and see things through for we all to survive, during this seasons i was able to learn more about my skills and try harnessing Pure forms of it like Product strategy.</p>
+            I’ve worked on a couple products mostly startups, which is really interesting because i had to get into a boat with the intention to push this, tho for we all to survive, during this seasons i was able to learn more about my skills and try harnessing Pure forms of it like Product strategy.</p>
           </div>
         </div>
       </div>
