@@ -15,6 +15,7 @@ const Portfolio = () => {
       title: "Zap logistics",
       button: "coming soon",
       link: "https://berry-echidna-297.notion.site/Zap-logistics-Case-study-780b89596db2444a9082adf8d8f7c217?pvs=4",
+      target: "_blank",
       brief:
         "ZAP is a mobility and logistics company specializing in connecting businesses and individuals with delivery agents  ",
     },
@@ -23,6 +24,7 @@ const Portfolio = () => {
       image: swapgo,
       title: "Swapgo",
       link: "/Swapgo",
+      target: "_blank",
       brief:
         "Swapgo the money app that gives you absolute control over your exchange rates.  ",
     },
@@ -30,6 +32,8 @@ const Portfolio = () => {
       id: 3,
       image: selldot,
       title: "Selldot",
+      link: "https://www.selldot.co/",
+      target: "_blank",
       brief:
         "Selldot helps customers to buy and sell used and new item by helping them vet quality used item",
     },
