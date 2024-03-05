@@ -56,6 +56,12 @@ const Works = () => {
       title: "Guesses make messes",
       link: "https://medium.com/design-bootcamp/guesses-make-messes-e2735750e770"
     },
+    {
+      id: 9,
+      image: "",
+      title: "How usability testing helps in shaping a product outcome",
+      link: "https://medium.com/design-bootcamp/how-usability-testing-helps-in-shaping-a-product-outcome-cb005327f760"
+    },
   ];
   const totalPages = Math.ceil(articles.length / articlesPerPage);
 
@@ -98,7 +104,7 @@ const Works = () => {
               }}
               className="w-full rounded-xl h-[300px] flex flex-col items-center cursor-pointer justify-center"
             >
-              <a href={item.link} target="_blank" className="text-black text-[26px] md:text-[28px] lg:text-[32px] xl:text-[40px] px-[24px] md:px-[53px] md:py-[67px] font-bold font-Satoshi underline-offset-2  hover:underline  p-2 transition-all duration-500 cursor-pointer">
+              <a href={item.link} target="_blank" className="text-black text-[26px] md:text-[28px] lg:text-[32px] xl:text-[40px] px-[24px] md:px-[30px] md:py-[67px] font-bold font-Satoshi underline-offset-2  hover:underline  p-2 transition-all duration-500 cursor-pointer">
                 {item.title}
               </a>
               

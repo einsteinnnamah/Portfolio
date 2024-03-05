@@ -7,6 +7,7 @@ import pics from "../assets/einstein.png";
 import Works from "../Components/Works";
 import Portfolio from "../Components/Portfolio";
 import Footer from "../Components/Footer"
+import Strategy from "../Components/Strategy";
 
 const Home = () => {
   
@@ -32,6 +33,7 @@ const Home = () => {
         </div>
       </section>
       <Portfolio /> 
+      <Strategy />
       <Works />
       <Footer />
       {/* <Events/> */}

@@ -37,13 +37,13 @@ const Portfolio = () => {
       brief:
         "Selldot helps customers to buy and sell used and new item by helping them vet quality used item",
     },
-    // {
-    //   id: 4,
-    //   image: typo,
-    //   title: "Declutter",
-    //   brief:
-    //     "EngageInbox is a sophisticated email marketing web ",
-    // },
+    {
+      id: 4,
+      image: typo,
+      title: "Mobile UI kit",
+      brief:
+        "Joined a team to create an open-source mobile UI kit, enhancing design consistency. Already, 5k+ users are benefiting from the template. ",
+    },
   ];
 
   return (
