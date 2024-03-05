@@ -1,6 +1,6 @@
 import React from "react";
 import { RightArrow } from "./Icons";
-import typo from '../assets/declutter.png'
+import opensource from '../assets/opensource.png'
 import zap from '../assets/zap.png'
 import swapgo from '../assets/swapgo.png'
 import selldot from '../assets/selldoot.png'
@@ -39,8 +39,9 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      image: typo,
-      title: "Mobile UI kit",
+      image: opensource,
+      title: "Open Source Mobile UI kit",
+      link: "https://www.figma.com/community/file/1132737808668818244/mobile-ui-kit-open-source",
       brief:
         "Joined a team to create an open-source mobile UI kit, enhancing design consistency. Already, 5k+ users are benefiting from the template. ",
     },
@@ -48,7 +49,7 @@ const Portfolio = () => {
 
   return (
     <>
-    <div className="max-w-[1440px] hidden font-Satoshi  mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5 md:grid grid-cols-1 sm:grid-cols-2 gap-8 p-3">
+    <div className="max-w-[1440px] hidden font-Satoshi mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5 md:grid grid-cols-1 sm:grid-cols-2 gap-8 p-3">
       {portfolio.map((item) => (
         <article
           className="w-full relative rounded-[15px] overflow-hidden"
