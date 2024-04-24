@@ -7,9 +7,9 @@ const Aboutme = () => {
       <Header />
       <div className="max-w-[1440px] mx-auto md:px-[60px] xl:px-[120px] px-[20px] py-5 flex text-center items-center justify-center">
         <div className="flex flex-col items-center text-center jus\">
-          <h1 className="text-white font-Satoshi font-bold  text-[34px] md:text-[64px] lg:w-[741px]">
+          <h1 className="text-white font-Satoshi font-bold  text-[34px] md:text-[64px] lg:w-[941px]">
             <span className="text-[#AAAAAA]"> On a mission to </span>{" "} <br />
-            Build Compelling Brands
+            Build Actionalable, Compelling, and True Brands
           </h1>
 
           <div className="mt-[50px]">
