@@ -14,7 +14,7 @@ const Portfolio = () => {
       image: zap,
       title: "Zap logistics",
       button: "coming soon",
-      link: "https://berry-echidna-297.notion.site/Zap-logistics-Case-study-780b89596db2444a9082adf8d8f7c217?pvs=4",
+      link: "https://einsteinnnamah.notion.site/Zap-logistics-Case-study-780b89596db2444a9082adf8d8f7c217?pvs=4",
       target: "_blank",
       brief:
         "ZAP is a mobility and logistics company specializing in connecting businesses and individuals with delivery agents  ",
