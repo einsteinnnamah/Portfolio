@@ -4,6 +4,7 @@ import opensource from '../assets/opensource.png'
 import zap from '../assets/zap.png'
 import swapgo from '../assets/swapgo.png'
 import selldot from '../assets/selldoot.png'
+import yourequal from '../assets/yourequal.png'
 import { Link } from "react-router-dom";
 const Portfolio = () => {
   const [hoveredArticle, setHoveredArticle] = React.useState(null);
@@ -44,6 +45,14 @@ const Portfolio = () => {
       link: "https://www.figma.com/community/file/1132737808668818244/mobile-ui-kit-open-source",
       brief:
         "Joined a team to create an open-source mobile UI kit, enhancing design consistency. Already, 5k+ users are benefiting from the template. ",
+    },
+       {
+      id: 5,
+      image: yourequal,
+      title: "Yourequal",
+      link: "https://www.yourequal.space/",
+      brief:
+        "Yourequal helps people from underrepresented groups share their work stories safely helping people find good places to work and encourage companies. ",
     },
   ];
 
